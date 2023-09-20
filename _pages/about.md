@@ -17,10 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# Current
+# 🍭 Current
 I am currently striving to pursue a Ph.D. opportunity with a focus on the intersection of life sciences and artificial intelligence.
 
-# About me
+#  👨🏼‍🎓About me
 I'm Jack Wu(武杰克), a third-year undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm),[<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/).
 
 # 📖 Educations
@@ -30,17 +30,14 @@ I'm Jack Wu(武杰克), a third-year undergraduate student at the [<span style="
 # 🎖 Honors and Awards
 - Outstanding Undergraduate Scholarship, Bronze award 2022, 2021
 
-# Activities
+# 🧪Activities
 
-- "From September 2021 to June 2022: Studied intestinal microbiota and its relevance to immunology in Professor Liu Qiang's laboratory."
-
-- "From January 2023 to October 2023: Under the guidance of Professor Zhou Congzhao, conducted screening of cyanobacteria and isolation of relevant phages from samples of Nest Lake water, followed by genome analysis."
-
-- "From December 2022 to September 2023: Under the supervision of Professor Xu Xiaorong, engaged in the design and manufacture of sustained-release biodegradable drug needles for the treatment of necrotizing fasciitis."
-
-- "From September 2023 to the present: Interning in Professor Duan Yi's laboratory, learning techniques related to animal experiments, while also studying the application of machine learning in genomics under the guidance of Professor Chen Wuyang."
+- From September 2021 to June 2022: Studied intestinal microbiota and its relevance to immunology in Professor Liu Qiang's laboratory.
+- From December 2022 to September 2023: Under the supervision of Professor Xu Xiaorong, engaged in the design and manufacture of sustained-release biodegradable drug needles for the treatment of necrotizing fasciitis.
+- From January 2023 to June 2023: Under the guidance of Professor Zhou Congzhao, conducted screening of cyanobacteria and isolation of relevant phages from samples of Nest Lake water, followed by genome analysis.
+- From September 2023 to the present: Interning in Professor Duan Yi's laboratory, learning techniques related to animal experiments, while also studying the application of machine learning in genomics under the guidance of Professor Chen Wuyang.
 
 These translations provide a formal and academic tone to your experiences.
 
 # 💻 Internships
-- *2022.05 - present*, [Jack Wu](https://github.com/a-green-hand-jack/), China.
+- *2023.07 - 2023.09*, [University of Science and Technology of China Suzhou Institute for Advanced Research]([https://github.com/a-green-hand-jack/](https://sz.ustc.edu.cn/index.html)https://sz.ustc.edu.cn/index.html), Suzhou,China.
