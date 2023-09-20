@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jack Wu's academic page"
-description              : "Undergraduate student of Department of Life Sciences and Medicine at University of Science and Technology of China."
+description              : "Be a positive, dedicated, and proactive individual.."
 # repository               : "RayeRen/acad-homepage.github.io"
 repository                : "a-green-hand-jack/a-green-hand-jack.github.io"
 google_scholar_stats_use_cdn : false
@@ -26,7 +26,7 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "University of Science and Technology of China"
   location         : "Hefei, China"
-  employer         :
+  employer         : "USTC"
   pubmed           : 
   # googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "jack666@mail.ustc.edu.cn"
@@ -38,7 +38,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "https://github.com/a-green-hand-jack/"
   google_plus      :
   keybase          :
   instagram        :
