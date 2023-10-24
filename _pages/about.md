@@ -28,16 +28,45 @@ I'm Jack Wu(武杰克), a third-year undergraduate student at the [<span style="
 - *Sept.2018---June 2021*:The Middle School Attached To Northwestern Polytechnical University
 
 # 🎖 Honors and Awards
-- Outstanding Undergraduate Scholarship, Bronze award 2022, 2021
+- Outstanding Undergraduate Scholarship, Bronze award 2023,2022, 2021
+- Third Prize in the 8th National University Life Science Competition 2023
 
 # 🧪Activities
 
-- From September 2021 to June 2022: Studied intestinal microbiota and its relevance to immunology in Professor Liu Qiang's laboratory.
-- From December 2022 to September 2023: Under the supervision of Professor Xu Xiaorong, engaged in the design and manufacture of sustained-release biodegradable drug needles for the treatment of necrotizing fasciitis.
-- From January 2023 to June 2023: Under the guidance of Professor Zhou Congzhao, conducted screening of cyanobacteria and isolation of relevant phages from samples of Nest Lake water, followed by genome analysis.
-- From September 2023 to the present: Interning in Professor Duan Yi's laboratory, learning techniques related to animal experiments, while also studying the application of machine learning in genomics under the guidance of Professor Chen Wuyang.
+**Simon Fraser University, Wuyang Chen**
+*Canada*
 
-These translations provide a formal and academic tone to your experiences.
+**Research Intern** (06/2023 -- present)
+- Learning basic techniques and knowledge of computer vision.
+- Exploring image enhancement techniques for medical image databases.
+
+**University of Science and Technology of China, Yi Duan**
+*China*
+
+**Research Intern** (01/2023-- present)
+- Learning techniques related to animal experiments.
+- Learning basic biochemical laboratory techniques.
+
+**Suzhou Institute for Advanced Research, Xiaorong Xu**
+*China*
+
+**Research Intern** (11/2022 -- 09/2023)
+- Proficiency in finite element simulation software (Comsol and Abaqus) for conducting simulation tasks.
+- Designed a micro-needle system for treating deep-seated tissue infections.
+
+**Laboratory of Biochemistry & Structural Biology, Congzhao Zhou**
+*China*
+
+**Research Intern** (09/2022 -- 06/2023)
+- Studied fundamentals and principles of bioinformatics, with a focus on genome analysis techniques.
+- Successfully isolated a strain of cyanobacteria from Chaohu Lake water sample and received recognition and an award at the National University Life Science Competition in the same year.
+
+# Skills
+
+**Programming Languages:** Python, C/C++, Matlab (ranked by proficiency)
+
+**Tools and Frameworks:** Git, LaTeX, PyTorch
+
 
 # 💻 Internships
 - *2023.07 - 2023.09*, [University of Science and Technology of China Suzhou Institute for Advanced Research]([https://github.com/a-green-hand-jack/](https://sz.ustc.edu.cn/index.html)https://sz.ustc.edu.cn/index.html), Suzhou,China.
