@@ -26,7 +26,7 @@ If you are interested in learning more about me and would like to explore my bac
 
 # 📖 Educations
 - *Sept.2021---June 2025*：B.Sc. in Biotechnology,Department of Life Sciences and Medicine,University of Science and Technology of China (expected)
-- *Sept.2018---June 2021*:The Middle School Attached To Northwestern Polytechnical University
+- *Sept.2018---June 2021*:[<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](https://xagdfz.xatu.edu.cn/)
 
 # 🧪 Research Experience
 
