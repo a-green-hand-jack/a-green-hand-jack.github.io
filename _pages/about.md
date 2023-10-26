@@ -30,7 +30,7 @@ If you are interested in learning more about me and would like to explore my bac
 
 # 🧪 Research Experience
 
-## Research on benign overfitting in computer vision.
+## 🖥 Research on benign overfitting in computer vision.
 **UC Berkeley, Dr.Wuyang Chen**
 *Canada*
 
@@ -39,7 +39,7 @@ If you are interested in learning more about me and would like to explore my bac
 - Exploring the Relationship between Data Covariance Properties and Image Recognition Accuracy.
 - Summarizing the Evaluation of Various Image Augmentation Methods on Different Medical Imaging Datasets.
 
-## Isolation of bacteriophages targeting gut bacteria
+## 🐀 Isolation of bacteriophages targeting gut bacteria
 **University of Science and Technology of China, Prof.Yi Duan**
 *China*
 
@@ -47,7 +47,7 @@ If you are interested in learning more about me and would like to explore my bac
 - Learning techniques related to animal experiments.
 - Learning basic biochemical laboratory techniques.
 
-## Biodegradable microneedles for transdermal delivery in biofilm-infected chronic wounds
+## 🦟 Biodegradable needles for transdermal delivery in biofilm-infected chronic wounds
 **Suzhou Institute for Advanced Research, Prof.Xiaorong Xu**
 *China*
 
@@ -61,7 +61,7 @@ If you are interested in learning more about me and would like to explore my bac
 - Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures.
   - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
 
-## Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
+## 🦠 Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
 **Laboratory of Biochemistry & Structural Biology, Prof.Congzhao Zhou**
 *China*
 
