@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Jack Wu's academic page"
+title                    : "Jieke(Jack) Wu's academic page"
 description              : "Be a positive, dedicated, and proactive individual.."
 # repository               : "RayeRen/acad-homepage.github.io"
 repository                : "a-green-hand-jack/a-green-hand-jack.github.io"
@@ -22,7 +22,7 @@ google_scholar_stats_use_cdn : false
 
 # Site Author
 author:
-  name             : "Jack Wu"
+  name             : "Jieke(Jack) Wu"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "University of Science and Technology of China"
   location         : "Hefei, China"
