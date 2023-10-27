@@ -30,7 +30,7 @@ If you are interested in learning more about me and would like to explore my bac
 
 # 🧪 Research Experience
 
-## 🖥 Research on benign overfitting in computer vision.
+## 🖥 Training-free Design of Data-centric Augmentations with Principles
 **UC Berkeley, Dr.Wuyang Chen**
 *Canada*
 
