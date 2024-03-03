@@ -32,9 +32,18 @@ If you are interested in learning more about me and would like to explore my bac
 
 ## 🖥 Training-free Design of Data-centric Augmentations with Principles
 **UC Berkeley, Dr.Wuyang Chen**
+**Cedars-Sinai Medical Center, Zhang, Dr.Zijun Frank**
+*US*
+
+**Research Assistant** (03/2024 -- present)
+- Investigating Concealed Information within DNA Sequences using Deep Learning.
+- Exploring how to enhance the model's perception of DNA information by integrating the global and local information of DNA sequences.
+
+## 🖥 Training-free Design of Data-centric Augmentations with Principles
+**UC Berkeley, Dr.Wuyang Chen**
 *Canada*
 
-**Research Assistant** (06/2023 -- present)
+**Research Assistant** (06/2023 -- 02/2024)
 - Exploring the Influence of Various Image Augmentation Methods on the Recognition Accuracy of Common Deep Learning Networks.
 - Exploring the Relationship between Data Covariance Properties and Image Recognition Accuracy.
 - Summarizing the Evaluation of Various Image Augmentation Methods on Different Medical Imaging Datasets.
