@@ -30,9 +30,11 @@ If you are interested in learning more about me and would like to explore my bac
 
 # 🧪 Research Experience
 
-## 🖥 Training-free Design of Data-centric Augmentations with Principles
+## 💻 Hierarchical transformer for genomics
 **UC Berkeley, Dr.Wuyang Chen**
+
 **Cedars-Sinai Medical Center, Zhang, Dr.Zijun Frank**
+
 *US*
 
 **Research Assistant** (03/2024 -- present)
@@ -41,6 +43,7 @@ If you are interested in learning more about me and would like to explore my bac
 
 ## 🖥 Training-free Design of Data-centric Augmentations with Principles
 **UC Berkeley, Dr.Wuyang Chen**
+
 *Canada*
 
 **Research Assistant** (06/2023 -- 02/2024)
@@ -50,6 +53,7 @@ If you are interested in learning more about me and would like to explore my bac
 
 ## 🐀 Isolation of bacteriophages targeting gut bacteria
 **University of Science and Technology of China, Prof.Yi Duan**
+
 *China*
 
 **Research Assistant** (01/2023-- present)
@@ -58,20 +62,18 @@ If you are interested in learning more about me and would like to explore my bac
 
 ## 🦟 Biodegradable needles for transdermal delivery in biofilm-infected chronic wounds
 **Suzhou Institute for Advanced Research, Prof.Xiaorong Xu**
+
 *China*
 
 **Research Assistant** (11/2022 -- 09/2023)
 - Proficiency in finite element simulation software (Comsol and Abaqus) for conducting simulation tasks.
-  - Utilized Abaqus to simulate the process of needle insertion into the skin.
-  - Utilized Comsol to optimize material selection and the geometric shape of the needle.
 - Designed a long-needle for the treatment of deep-seated tissue infections.
-  - The design of this long needle was inspired by the mouthparts structure of insects such as mosquitoes and ticks.
-  - This long needle inherits the advantages of microneedles and compensates for their limitations in terms of depth.
 - Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures.
-  - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
+- This project has been recognized as an outstanding university-level endeavor within the College Student Research Program.
 
 ## 🦠 Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
 **Laboratory of Biochemistry & Structural Biology, Prof.Congzhao Zhou**
+
 *China*
 
 **Research Assistant** (09/2022 -- 06/2023)
@@ -87,6 +89,7 @@ If you are interested in learning more about me and would like to explore my bac
 # 🎖 Honors and Awards
 - Outstanding Undergraduate Scholarship 2023,2022, 2021
 - Third Prize in the 8th National University Life Science Competition 2023
+- Outstanding School-Level Project: College Student Research Program
 
 # 🧭 Skills
 
