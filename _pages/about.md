@@ -31,9 +31,8 @@ If you are interested in learning more about me and would like to explore my bac
 # 🧪 Research Experience
 
 ## 💻 Hierarchical transformer for genomics
+**Cedars-Sinai Medical Center, Dr.Zijun Zhang**
 **UC Berkeley, Dr.Wuyang Chen**
-
-**Cedars-Sinai Medical Center, Zhang, Dr.Zijun Frank**
 
 *US*
 
