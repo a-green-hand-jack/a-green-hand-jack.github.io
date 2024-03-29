@@ -86,10 +86,9 @@ If you are interested in learning more about me and would like to explore my bac
 
 **Research Assistant** (09/2022 -- 06/2023)
 - Studied fundamentals and principles of bioinformatics, with a focus on genome analysis techniques.
-- Successfully isolated three strains of cyanobacteria from Chaohu Lake water samples.
+- Successfully isolated three strains of cyanobacteria from Lake Chaohu water samples.
 - Conducted a genomic analysis of these three cyanobacteria strains, thereby determining their taxonomic classification.
-- Isolated some cyanophages from Chaohu Lake water samples using these isolated cyanobacteria strains.
-- Observed the morphology of these cyanophages under an electron microscope.
+- Isolated some cyanophages from Lake Chaohu water samples using these isolated cyanobacteria strains.
 - Thanks to this work, we received an award at the National University Life Science Competition in the same year.
 
 
