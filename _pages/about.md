@@ -32,9 +32,10 @@ If you are interested in learning more about me and would like to explore my bac
 
 ## 💻 Hierarchical transformer for genomics
 **Cedars-Sinai Medical Center, Dr.Zijun Zhang**
+
 **UC Berkeley, Dr.Wuyang Chen**
 
-*US*
+*US (remote)*
 
 **Research Assistant** (03/2024 -- present)
 - Investigating Concealed Information within DNA Sequences using Deep Learning.
@@ -43,12 +44,12 @@ If you are interested in learning more about me and would like to explore my bac
 ## 🖥 Training-free Design of Data-centric Augmentations with Principles
 **UC Berkeley, Dr.Wuyang Chen**
 
-*Canada*
+*Canada (remote)*
 
 **Research Assistant** (06/2023 -- 02/2024)
-- Exploring the Influence of Various Image Augmentation Methods on the Recognition Accuracy of Common Deep Learning Networks.
-- Exploring the Relationship between Data Covariance Properties and Image Recognition Accuracy.
-- Summarizing the Evaluation of Various Image Augmentation Methods on Different Medical Imaging Datasets.
+- Explored the influence of various image augmentation methods on the recognition accuracy of common deep learning networks.
+- Explored the relationship between data covariance properties and image recognition accuracy.
+- Summarized the evaluation of various image augmentation methods on different medical imaging datasets.
 
 ## 🐀 Isolation of bacteriophages targeting gut bacteria
 **University of Science and Technology of China, Prof.Yi Duan**
@@ -65,10 +66,22 @@ If you are interested in learning more about me and would like to explore my bac
 *China*
 
 **Research Assistant** (11/2022 -- 09/2023)
-- Proficiency in finite element simulation software (Comsol and Abaqus) for conducting simulation tasks.
-- Designed a long-needle for the treatment of deep-seated tissue infections.
+- Proficiency in finite element simulation software (COMSOL and Abaqus) for conducting simulation tasks.
+<!--
+  - Utilized Abaqus to simulate the process of needle insertion into the skin.
+  - Utilized COMSOL to optimize material selection and the geometric shape of the needle.
+-->
+- Designed a long needle for the treatment of deep-seated tissue infections.
+<!--
+  - The design of this long needle was inspired by the mouthparts structure of insects such as mosquitoes and ticks.
+  - This long needle inherits the advantages of microneedles and compensates for their limitations in terms of depth.
+-->
 - Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures.
-- This project has been recognized as an outstanding university-level endeavor within the College Student Research Program.
+- This project was rated as an excellent school-level project that year.
+<!--
+  - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
+-->
+
 
 ## 🦠 Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
 **Laboratory of Biochemistry & Structural Biology, Prof.Congzhao Zhou**
@@ -86,15 +99,15 @@ If you are interested in learning more about me and would like to explore my bac
 
 
 # 🎖 Honors and Awards
-- Outstanding Undergraduate Scholarship 2023,2022, 2021
+- Outstanding School-Level Project: College Student Research Program 2023
 - Third Prize in the 8th National University Life Science Competition 2023
-- Outstanding School-Level Project: College Student Research Program
+- Outstanding Undergraduate Scholarship 2023,2022, 2021
 
 # 🧭 Skills
 
 **Programming Languages:** Python, C/C++, Matlab (ranked by proficiency)
 
-**Tools and Frameworks:** Git, $\LaTeX$, PyTorch
+**Tools and Frameworks:** Git, $\LaTeX$, PyTorch, HuggingFace
 
 
 # 💻 Internships
