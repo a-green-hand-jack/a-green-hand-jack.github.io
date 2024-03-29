@@ -67,20 +67,16 @@ If you are interested in learning more about me and would like to explore my bac
 
 **Research Assistant** (11/2022 -- 09/2023)
 - Proficiency in finite element simulation software (COMSOL and Abaqus) for conducting simulation tasks.
-<!--
   - Utilized Abaqus to simulate the process of needle insertion into the skin.
   - Utilized COMSOL to optimize material selection and the geometric shape of the needle.
--->
 - Designed a long needle for the treatment of deep-seated tissue infections.
-<!--
   - The design of this long needle was inspired by the mouthparts structure of insects such as mosquitoes and ticks.
   - This long needle inherits the advantages of microneedles and compensates for their limitations in terms of depth.
--->
 - Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures.
+ - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
 - This project was rated as an excellent school-level project that year.
-<!--
-  - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
--->
+  
+
 
 
 ## 🦠 Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
