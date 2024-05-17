@@ -56,9 +56,12 @@ If you are interested in learning more about me and would like to explore my bac
 
 *China*
 
-**Research Assistant** (01/2023-- present)
-- Learning techniques related to animal experiments.
-- Learning basic biochemical laboratory techniques.
+**Research Assistant** (01/2023-- 05/2024)
+- This study has successfully established an in vitro culture system for $\textit{Akkermansia muciniphila}$ (Akk), free from contamination by $\textit{Cutibacterium acnes}$. Notably, the culture system developed in our study is simpler, more user-friendly, and less susceptible to contamination compared to any previously reported systems. 
+- Additionally, we have successfully isolated phages targeting Akk from wastewater samples and have conducted multiple rounds of purification and amplification.
+- The phage library constructed in this study for Akk can serve as a phage technology or tool for the specific knockdown or knockout of Akk populations within the gut. This enables further investigation into the mechanisms of action of Akk in the gut in relation to various diseases. This represents the significance of our research topic.
+- Furthermore, we can construct phage libraries targeting other gut microbiota, thereby providing technical support for other studies related to gut microbiome research.
+- This project was rated as an excellent school-level project that year.
 
 ## 🦟 Biodegradable needles for transdermal delivery in biofilm-infected chronic wounds
 **Suzhou Institute for Advanced Research, Prof.Xiaorong Xu**
