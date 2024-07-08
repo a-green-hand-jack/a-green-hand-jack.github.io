@@ -94,7 +94,8 @@ If you are interested in learning more about me and would like to explore my bac
 - Isolated some cyanophages from Lake Chaohu water samples using these isolated cyanobacteria strains.
 - Thanks to this work, we received an award at the National University Life Science Competition in the same year.
 
-
+# Publications
+- **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*.
 
 # 🎖 Honors and Awards
 - Outstanding School-Level Project: College Student Research Program 2023
