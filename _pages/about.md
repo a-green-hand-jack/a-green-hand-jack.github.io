@@ -22,7 +22,7 @@ I am currently striving to pursue a Ph.D. degree with a focus on the intersectio
 
 #  👨🏼‍🎓About me
 I'm Jieke(Jack) Wu(武杰克), a third-year undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm),[<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/).
-If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/resume.pdf) to download my resume.
+If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my resume.
 
 # 📖 Educations
 - *Sept.2021---June 2025*：B.Sc. in Biotechnology,Department of Life Sciences and Medicine,University of Science and Technology of China (expected)
