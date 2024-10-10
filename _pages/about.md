@@ -17,13 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 🍭 Current
-I am currently striving to pursue a Ph.D. degree with a focus on the intersection of life sciences and artificial intelligence.
 
 # 👨🏼‍🎓 About me
-I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/). If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my resume.
+I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/). I am currently striving to pursue a Ph.D. degree with a focus on the intersection of life sciences and artificial intelligence. If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my resume.
 
-# 📖 Education
+# 📖 Educations
 
 - *Sept.2021 – June 2025*: B.Sc. in Biotechnology, Department of Life Sciences and Medicine, University of Science and Technology of China (expected)
 - *Sept.2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/)
