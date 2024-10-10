@@ -84,6 +84,9 @@ I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span st
 
 **Programming Languages:** Python, C/C++, Matlab (ranked by proficiency)
 
+# Personal Interests
+Anime: As a pastime in my spare time, I watched a lot of Japanese anime about love, sports, myth and sci-fi.
+
 **Tools and Frameworks:** Git, $\LaTeX$, PyTorch, HuggingFace
 
 # 💻 Internships
