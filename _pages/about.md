@@ -71,7 +71,7 @@ I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span st
 - Conducted genomic analysis on the isolated cyanobacteria, determining their taxonomic classification and evaluating their ecological roles within the lake’s ecosystem.
 - This research won an award at the National University Life Science Competition, highlighting its significance in advancing our understanding of freshwater microbiomes and their interaction with phages.
 
-# Publications
+# 📑 Publications
 - **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*.
 
 # 🎖 Honors and Awards
@@ -82,12 +82,11 @@ I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span st
 
 # 🧭 Skills
 
-**Programming Languages:** Python, C/C++, Matlab (ranked by proficiency)
+- **Programming Languages:** Python, C/C++, Matlab (ranked by proficiency)
+- **Tools and Frameworks:** Git, $\LaTeX$, PyTorch, HuggingFace
 
-# Personal Interests
-Anime: As a pastime in my spare time, I watched a lot of Japanese anime about love, sports, myth and sci-fi.
-
-**Tools and Frameworks:** Git, $\LaTeX$, PyTorch, HuggingFace
+# 🎥 Personal Interests
+- **Anime**: As a pastime in my spare time, I watched a lot of Japanese anime about love, sports, myth and sci-fi.
 
 # 💻 Internships
 - *July 2023 – September 2023*: [University of Science and Technology of China Suzhou Institute for Advanced Research](https://sz.ustc.edu.cn/index.html), Suzhou, China.
