@@ -20,87 +20,65 @@ redirect_from:
 # 🍭 Current
 I am currently striving to pursue a Ph.D. degree with a focus on the intersection of life sciences and artificial intelligence.
 
-#  👨🏼‍🎓About me
-I'm Jieke(Jack) Wu(武杰克), a third-year undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm),[<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/).
-If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my resume.
+# 👨🏼‍🎓 About me
+I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/). If you are interested in learning more about me and would like to explore my background further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my resume.
 
-# 📖 Educations
-- *Sept.2021---June 2025*：B.Sc. in Biotechnology,Department of Life Sciences and Medicine,University of Science and Technology of China (expected)
-- *Sept.2018---June 2021*:[<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/)
+# 📖 Education
+
+- *Sept.2021 – June 2025*: B.Sc. in Biotechnology, Department of Life Sciences and Medicine, University of Science and Technology of China (expected)
+- *Sept.2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/)
 
 # 🧪 Research Experience
 
-## 💻 Hierarchical transformer for genomics
-**Cedars-Sinai Medical Center, Dr.Zijun Zhang**
-
-**UC Berkeley, Dr.Wuyang Chen**
-
-*US (remote)*
-
-**Research Assistant** (03/2024 -- present)
-- Investigating Concealed Information within DNA Sequences using Deep Learning.
-- Exploring how to enhance the model's perception of DNA information by integrating the global and local information of DNA sequences.
+## 💻 Hierarchical Transformer for Genomics
+**Cedars-Sinai Medical Center, Dr. Zijun Zhang** \\
+**UC Berkeley, Prof. Wuyang Chen** \\
+*Remote (US)* \\
+**Research Assistant** (03/2024 – 08/2024)
+- This project focuses on the application of deep learning techniques, particularly hierarchical transformers, to uncover hidden patterns in DNA sequences. By integrating both global and local DNA information, we aim to enhance the model's ability to better understand and predict complex genetic structures.
+- Specifically, I focused on improving model performance by devising a method that balances the global context of entire DNA sequences with localized, detailed genomic information. This allows for more accurate predictions of genetic functions and structures, potentially aiding in biomedical research.
+- By this project, I had a better understanding of LLMS and konwn how to use Huggingface and some other deeplearning toolboxes.
 
 ## 🖥 Training-free Design of Data-centric Augmentations with Principles
-**UC Berkeley, Dr.Wuyang Chen**
+**UC Berkeley, Prof. Wuyang Chen** \\
+*Remote (Canada)* \\
+**Research Assistant** (06/2023 – 02/2024)
+- Developed a training-free framework that evaluates the effectiveness of various image augmentation techniques on deep learning models, particularly in the context of medical imaging datasets.
+- Investigated the relationship between data covariance properties and image recognition accuracy, providing insights into how certain augmentations could be leveraged to improve model robustness without the need for extensive retraining.
+- Our work demonstrated that these augmentation methods could substantially improve the efficiency and accuracy of medical image analysis, especially for under-represented or noisy datasets. [<span style="color:#41555d;">This research</span>](https://openreview.net/forum?id=kmAdBRaShI) was published in the ICML 2024 Workshop AI4Science.
 
-*Canada (remote)*
+## 🐀 Isolation of Bacteriophages Targeting Gut Bacteria
+**University of Science and Technology of China, Prof. Yi Duan** \\
+*Hefei, China* \\
+**Research Assistant** (01/2023 – 05/2024)
+- Developed an innovative \textit{in vitro} culture system for \textit{Akkermansia muciniphila} (Akk), a key gut bacterium. Our system was contamination-free, specifically addressing the issue of \textit{Cutibacterium acnes} contamination that plagued earlier methods.
+- Isolated and purified Akk-targeting bacteriophages from wastewater samples. Following multiple rounds of amplification, we constructed a phage library that serves as a toolkit for selectively targeting Akk populations in the gut microbiome.
+- This phage library provides a crucial resource for studying Akk’s role in various diseases, offering potential applications for targeted microbiome manipulation in therapeutic contexts. This project received an outstanding rating as a school-level research initiative.
 
-**Research Assistant** (06/2023 -- 02/2024)
-- Explored the influence of various image augmentation methods on the recognition accuracy of common deep learning networks.
-- Explored the relationship between data covariance properties and image recognition accuracy.
-- Summarized the evaluation of various image augmentation methods on different medical imaging datasets.
+## 🦟 Biodegradable Needles for Transdermal Delivery in Biofilm-Infected Chronic Wounds
+**Suzhou Institute for Advanced Research, Prof. Xiaorong Xu** \\
+*Suzhou, China* \\
+**Research Assistant** (11/2022 – 09/2023)
+- Designed biodegradable long microneedles inspired by the mouthparts of insects like mosquitoes and ticks. These needles are intended for the treatment of deep tissue infections caused by biofilm-forming bacteria.
+- Utilized finite element simulation software (COMSOL and Abaqus) to optimize the needle's design, focusing on material properties and geometric configurations that could penetrate deep skin layers while maintaining structural flexibility.
+- Introduced a novel injection molding technique for economically producing these complex needle structures. This project was highly rated and received recognition as an outstanding school-level project.
 
-## 🐀 Isolation of bacteriophages targeting gut bacteria
-**University of Science and Technology of China, Prof.Yi Duan**
-
-*China*
-
-**Research Assistant** (01/2023-- 05/2024)
-- This study has successfully established an in vitro culture system for $\textit{Akkermansia muciniphila}$ (Akk), free from contamination by $\textit{Cutibacterium acnes}$. Notably, the culture system developed in our study is simpler, more user-friendly, and less susceptible to contamination compared to any previously reported systems. 
-- Additionally, we have successfully isolated phages targeting Akk from wastewater samples and have conducted multiple rounds of purification and amplification.
-- The phage library constructed in this study for Akk can serve as a phage technology or tool for the specific knockdown or knockout of Akk populations within the gut. This enables further investigation into the mechanisms of action of Akk in the gut in relation to various diseases. This represents the significance of our research topic.
-- Furthermore, we can construct phage libraries targeting other gut microbiota, thereby providing technical support for other studies related to gut microbiome research.
-- This project was rated as an excellent school-level project that year.
-
-## 🦟 Biodegradable needles for transdermal delivery in biofilm-infected chronic wounds
-**Suzhou Institute for Advanced Research, Prof.Xiaorong Xu**
-
-*China*
-
-**Research Assistant** (11/2022 -- 09/2023)
-- Proficiency in finite element simulation software (COMSOL and Abaqus) for conducting simulation tasks.
-  - Utilized Abaqus to simulate the process of needle insertion into the skin.
-  - Utilized COMSOL to optimize material selection and the geometric shape of the needle.
-- Designed a long needle for the treatment of deep-seated tissue infections.
-  - The design of this long needle was inspired by the mouthparts structure of insects such as mosquitoes and ticks.
-  - This long needle inherits the advantages of microneedles and compensates for their limitations in terms of depth.
-- Introduced a novel injection molding method for the cost-effective and convenient production of long or microneedles with complex geometrical structures.
- - A heterogeneous model that allows simultaneous consideration of needle puncture strength and structural flexibility.
-- This project was rated as an excellent school-level project that year.
-  
-
-
-
-## 🦠 Isolation and identification of cyanobacteria and cyanophages from Lake Chaohu 
-**Laboratory of Biochemistry & Structural Biology, Prof.Congzhao Zhou**
-
-*China*
-
-**Research Assistant** (09/2022 -- 06/2023)
-- Studied fundamentals and principles of bioinformatics, with a focus on genome analysis techniques.
-- Successfully isolated three strains of cyanobacteria from Lake Chaohu water samples.
-- Conducted a genomic analysis of these three cyanobacteria strains, thereby determining their taxonomic classification.
-- Isolated some cyanophages from Lake Chaohu water samples using these isolated cyanobacteria strains.
-- Thanks to this work, we received an award at the National University Life Science Competition in the same year.
+## 🦠 Isolation and Identification of Cyanobacteria and Cyanophages from Lake Chaohu
+**Laboratory of Biochemistry & Structural Biology, Prof. Congzhao Zhou** \\
+*Hefei, China* \\
+**Research Assistant** (09/2022 – 06/2023)
+- Successfully isolated three strains of cyanobacteria and their corresponding cyanophages from water samples collected from Lake Chaohu.
+- Conducted genomic analysis on the isolated cyanobacteria, determining their taxonomic classification and evaluating their ecological roles within the lake’s ecosystem.
+- This research won an award at the National University Life Science Competition, highlighting its significance in advancing our understanding of freshwater microbiomes and their interaction with phages.
 
 # Publications
 - **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*.
 
 # 🎖 Honors and Awards
+- Outstanding School-Level Project: Undergraduate Innovation and Entrepreneurship Training Program 2024
 - Outstanding School-Level Project: College Student Research Program 2023
 - Third Prize in the 8th National University Life Science Competition 2023
-- Outstanding Undergraduate Scholarship 2023,2022, 2021
+- Outstanding Undergraduate Scholarship 2024, 2023, 2022, 2021
 
 # 🧭 Skills
 
@@ -108,6 +86,5 @@ If you are interested in learning more about me and would like to explore my bac
 
 **Tools and Frameworks:** Git, $\LaTeX$, PyTorch, HuggingFace
 
-
 # 💻 Internships
-- *2023.07 - 2023.09*, [University of Science and Technology of China Suzhou Institute for Advanced Research]([https://github.com/a-green-hand-jack/](https://sz.ustc.edu.cn/index.html)https://sz.ustc.edu.cn/index.html), Suzhou,China.
+- *July 2023 – September 2023*: [University of Science and Technology of China Suzhou Institute for Advanced Research](https://sz.ustc.edu.cn/index.html), Suzhou, China.
