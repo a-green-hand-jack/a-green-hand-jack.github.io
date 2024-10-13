@@ -26,7 +26,19 @@ I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span st
 - *Sept.2021 – June 2025*: B.Sc. in Biotechnology, Department of Life Sciences and Medicine, University of Science and Technology of China (expected)
 - *Sept.2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/)
 
+# 📑 Publications
+- **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*.
+- Tinghui Wu, **Jieke Wu**, Wuyang Chen, Zijun Zhang ”Training-free Design of Deep Networks as Ensembles of *Clinical Experts” under submission*
 # 🧪 Research Experience
+
+## 💻 Training-free Design of Deep Networks
+**Cedars-Sinai Medical Center, Dr. Zijun Zhang** \\
+**UC Berkeley, Prof. Wuyang Chen** \\
+*Remote (US)* \\
+**Research Assistant** (08/2024 – present)
+- **TEACUP introduces a novel, training-free metric** that accurately evaluates the quality of deep learning models without the need for costly training, significantly reducing computation costs (by over 90%) compared to traditional approaches.
+- **TEACUP improves performance across various clinical tasks**, offering enhanced predictive accuracy and reliability, which is crucial in medical applications.
+- **TEACUP enables the creation of AI model ensembles**, simulating the use of multiple human experts in clinical settings to provide more robust predictions and better uncertainty quantification.
 
 ## 💻 Hierarchical Transformer for Genomics
 **Cedars-Sinai Medical Center, Dr. Zijun Zhang** \\
@@ -68,9 +80,6 @@ I'm Jieke (Jack) Wu (武杰克), a senior undergraduate student at the [<span st
 - Successfully isolated three strains of cyanobacteria and their corresponding cyanophages from water samples collected from Lake Chaohu.
 - Conducted genomic analysis on the isolated cyanobacteria, determining their taxonomic classification and evaluating their ecological roles within the lake’s ecosystem.
 - This research won an award at the National University Life Science Competition, highlighting its significance in advancing our understanding of freshwater microbiomes and their interaction with phages.
-
-# 📑 Publications
-- **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*.
 
 # 🎖 Honors and Awards
 - Outstanding School-Level Project: Undergraduate Innovation and Entrepreneurship Training Program 2024
