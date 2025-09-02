@@ -19,7 +19,7 @@ redirect_from:
 
 
 # 👨🏼‍🎓 About me
-I'm Jieke (Jack) Wu (武杰克), a graduate student at [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), pursuing MS/PhD in Computer Science. I am a member of the [<span style="color:#21a675;">Structural and Functional Bioinformatics (SFB) Research Group</span>](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of computational biology, artificial intelligence, and protein structure prediction.
+I'm Jieke (Jack) Wu (武杰克), a graduate student at [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), pursuing MS/PhD in Computer Science. I am a member of the [<span style="color:#21a675;">Structural and Functional Bioinformatics (SFB) Research Group</span>](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of computational biology, artificial intelligence, and protein design.
 
 My research journey began at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology with a strong academic foundation (GPA: 84.96/100, Rank: 29/91). This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
 
@@ -37,7 +37,7 @@ If you are interested in collaborating on research projects or would like to dis
 
 - *Sept. 2025 – Present*: **MS/PhD in Computer Science**, [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), Thuwal, Saudi Arabia
   - Member of the Structural and Functional Bioinformatics (SFB) Research Group
-  - Research focus: Computational biology, AI, and protein structure prediction
+  - Research focus: Computational biology, AI, and protein design
   - Advisor: Prof. Xin Gao
 
 - *Aug. 2021 – July 2025*: **B.S. in Biological Technology**, School of Life Sciences, [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/)
