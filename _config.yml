@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Jieke(Jack) Wu's academic page"
-description              : "Be a positive, dedicated, and proactive individual.."
+title                    : "Jieke(Jack) Wu - Computational Biology & AI Research"
+description              : "Graduate student at KAUST focusing on computational biology, artificial intelligence, and protein structure prediction. Bridging the gap between biological research and modern computational approaches."
 # repository               : "RayeRen/acad-homepage.github.io"
 repository                : "a-green-hand-jack/a-green-hand-jack.github.io"
 google_scholar_stats_use_cdn : false
@@ -24,12 +24,12 @@ google_scholar_stats_use_cdn : false
 author:
   name             : "Jieke(Jack) Wu"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "University of Science and Technology of China"
-  location         : "Hefei, China"
-  employer         : "USTC"
+  bio              : "Graduate Student at King Abdullah University of Science and Technology (KAUST)"
+  location         : "Thuwal, Saudi Arabia"
+  employer         : "KAUST"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=nCqN-psAAAAJ"
-  email            : "jack666@mail.ustc.edu.cn"
+  email            : "jieke.wu@mail.ustc.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
