@@ -23,9 +23,15 @@ I'm Jieke (Jack) Wu (武杰克), a graduate student at [<span style="color:#1bd1
 
 My research journey began at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology with a strong academic foundation (GPA: 84.96/100, Rank: 29/91). This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
 
-My research interests span across multiple domains: from developing training-free evaluation frameworks for clinical AI systems, to exploring the potential of large language models in educational applications, and advancing protein generation models using diffusion techniques. I am particularly passionate about creating AI solutions that can make meaningful contributions to healthcare, education, and drug discovery.
+**My current research interests focus on:**
+- **Protein Design**: Developing advanced generative models for de novo protein design and structure prediction
+- **Multi-Agent Systems**: Exploring intelligent agent frameworks for complex biological and medical tasks
+- **AI + Drug Discovery**: Leveraging artificial intelligence to accelerate pharmaceutical development and drug design
+- **AI + Healthcare**: Creating AI solutions for medical diagnosis, treatment optimization, and personalized medicine
 
-If you are interested in learning more about my background and would like to explore my research portfolio further, please click [here](https://github.com/a-green-hand-jack/CV/raw/master/Jieke%20Wu's%20resume.pdf) to download my detailed resume.
+I am actively researching generative models including **diffusion models** and **flow matching** techniques, as well as developing intelligent **agents** for various applications in computational biology and healthcare.
+
+If you are interested in collaborating on research projects or would like to discuss potential opportunities, please feel free to contact me at [jieke.wu@kaust.edu.sa](mailto:jieke.wu@kaust.edu.sa).
 
 # 📖 Educations
 
@@ -37,9 +43,8 @@ If you are interested in learning more about my background and would like to exp
 - *Aug. 2021 – July 2025*: **B.S. in Biological Technology**, School of Life Sciences, [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/)
   - **GPA**: 84.96/100, **Rank**: 29/91
   - **Core Courses**: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+), Undergraduate Innovation and Entrepreneurship Training Program (A+)
-  - **Thesis**: Advanced techniques in bacteriophage isolation and characterization for gut microbiome manipulation
 
-- *Sept. 2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/)
+<!-- - *Sept. 2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/) -->
 
 # 📑 Publications
 - **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*. This work introduces a novel framework for evaluating data augmentation strategies without requiring expensive model training, significantly reducing computational costs while maintaining accuracy.
@@ -122,7 +127,7 @@ This research focused on developing training-free methods for evaluating and des
 
 This project addressed critical challenges in gut microbiome research through innovative bacteriophage isolation techniques:
 
-- **Improved \textit{A. muciniphila} culture system** by eliminating \textit{C. acnes} contamination, solving a persistent problem in gut microbiome research
+<!-- - **Improved \textit{A. muciniphila} culture system** by eliminating \textit{C. acnes} contamination, solving a persistent problem in gut microbiome research -->
 - **Isolated Akk-targeting phages** from wastewater samples, creating a comprehensive phage library for gut microbiome manipulation
 - **Developed novel purification protocols** that maintain phage viability while removing contaminants
 - **Characterized phage-host interactions** to understand the specificity and efficiency of the isolated phages
@@ -150,8 +155,8 @@ This environmental microbiology project contributed to our understanding of fres
 
 - **Isolated three distinct strains** of cyanobacteria and their corresponding cyanophages from Lake Chaohu water samples
 - **Conducted comprehensive genomic analysis** to determine taxonomic classification and ecological roles
-- **Characterized phage-host interactions** to understand the dynamics of cyanobacterial populations
-- **Awarded recognition** at the National University Life Science Competition in 2023 for scientific excellence
+<!-- - **Characterized phage-host interactions** to understand the dynamics of cyanobacterial populations -->
+<!-- - **Awarded recognition** at the National University Life Science Competition in 2023 for scientific excellence -->
 - **Contributed to freshwater ecosystem** understanding and potential applications in environmental monitoring
 
 # 💻 Internships
@@ -164,10 +169,10 @@ This environmental microbiology project contributed to our understanding of fres
 This cutting-edge internship focused on developing next-generation protein generation models using advanced AI techniques:
 
 - **Developed unconditional protein generation models** using diffusion techniques in SE(3) space, enabling de novo protein design with unprecedented accuracy
-- **Implemented and optimized training pipelines** for protein generation models, achieving efficient and scalable deployment across different computational resources
+<!-- - **Implemented and optimized training pipelines** for protein generation models, achieving efficient and scalable deployment across different computational resources -->
 - **Investigated Flow Matching techniques** in SE(3) space to enhance the generative capabilities of protein models, improving sampling efficiency and quality
 - **Explored conditional protein generation tasks** including Protein Docking and Binder Design, advancing the model's applicability in drug discovery and structural biology
-- **Collaborated with interdisciplinary teams** to integrate biological constraints and validation methods into the AI pipeline
+<!-- - **Collaborated with interdisciplinary teams** to integrate biological constraints and validation methods into the AI pipeline -->
 - **Contributed to the development** of tools that can accelerate drug discovery processes and protein engineering applications
 
 # 🎖 Honors and Awards
