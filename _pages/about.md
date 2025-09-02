@@ -21,7 +21,7 @@ redirect_from:
 # 👨🏼‍🎓 About me
 I'm Jieke (Jack) Wu (武杰克), a graduate student at [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), pursuing MS/PhD in Computer Science. I am a member of the [<span style="color:#21a675;">Structural and Functional Bioinformatics (SFB) Research Group</span>](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of computational biology, artificial intelligence, and protein design.
 
-My research journey began at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology with a strong academic foundation (GPA: 84.96/100, Rank: 29/91). This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
+My research journey began at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology with a strong academic foundation. This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
 
 **My current research interests focus on:**
 - **Protein Design**: Developing advanced generative models for de novo protein design and structure prediction
@@ -41,8 +41,8 @@ If you are interested in collaborating on research projects or would like to dis
   - Advisor: Prof. Xin Gao
 
 - *Aug. 2021 – July 2025*: **B.S. in Biological Technology**, School of Life Sciences, [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/)
-  - **GPA**: 84.96/100, **Rank**: 29/91
-  - **Core Courses**: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+), Undergraduate Innovation and Entrepreneurship Training Program (A+)
+  <!-- - **GPA**: 84.96/100, **Rank**: 29/91 -->
+  <!-- - **Core Courses**: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+), Undergraduate Innovation and Entrepreneurship Training Program (A+) -->
 
 <!-- - *Sept. 2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/) -->
 
@@ -171,7 +171,7 @@ This cutting-edge internship focused on developing next-generation protein gener
 - **Developed unconditional protein generation models** using diffusion techniques in SE(3) space, enabling de novo protein design with unprecedented accuracy
 <!-- - **Implemented and optimized training pipelines** for protein generation models, achieving efficient and scalable deployment across different computational resources -->
 - **Investigated Flow Matching techniques** in SE(3) space to enhance the generative capabilities of protein models, improving sampling efficiency and quality
-- **Explored conditional protein generation tasks** including Protein Docking and Binder Design, advancing the model's applicability in drug discovery and structural biology
+- **Explored conditional protein generation tasks** including De novo design and binder design, advancing the model's applicability in drug discovery and synthetic biology
 <!-- - **Collaborated with interdisciplinary teams** to integrate biological constraints and validation methods into the AI pipeline -->
 - **Contributed to the development** of tools that can accelerate drug discovery processes and protein engineering applications
 
@@ -189,18 +189,18 @@ This cutting-edge internship focused on developing next-generation protein gener
 - **[C/C++](https://isocpp.org/)**: Strong foundation in systems programming and performance-critical applications
 - **[Matlab](https://ww2.mathworks.cn/products/matlab.html)**: Experience in numerical computing and signal processing
 
-## **Tools and Frameworks**
+## **Frameworks** and Tools
 - **[HuggingFace](https://huggingface.co/)**: Expertise in transformer models, fine-tuning, and deployment of large language models
 - **[PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)**: Advanced deep learning workflows and distributed training
 - **[PyTorch](https://pytorch.org/)**: Comprehensive experience in deep learning model development and optimization
 - **[Git](https://git-scm.com/)**: Version control and collaborative development practices
 - **[$\LaTeX$](https://www.latex-project.org/)**: Professional document preparation and academic writing
 
-## **Domain-Specific Skills**
+<!-- ## **Domain-Specific Skills**
 - **Computational Biology**: Protein structure prediction, genomic analysis, and bioinformatics pipelines
 - **Machine Learning**: Deep learning, transfer learning, and model evaluation frameworks
 - **Medical AI**: Clinical data analysis, medical imaging, and healthcare applications
-- **Research Methods**: Experimental design, statistical analysis, and scientific communication
+- **Research Methods**: Experimental design, statistical analysis, and scientific communication -->
 
 # 🎥 Personal Interests
 - **Anime**: As a pastime in my spare time, I enjoy watching Japanese anime spanning various genres including romance, sports, mythology, and science fiction. This hobby helps me maintain creativity and cultural awareness while providing relaxation from intensive research work.
