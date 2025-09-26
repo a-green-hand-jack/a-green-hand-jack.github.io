@@ -49,7 +49,7 @@ If you are interested in collaborating on research projects or would like to dis
 # 📑 Publications
 - **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*. This work introduces a novel framework for evaluating data augmentation strategies without requiring expensive model training, significantly reducing computational costs while maintaining accuracy.
 
-- Tinghui Wu$^\dag$, **Jieke Wu$^\dag$**, Zijun Zhang, Wuyang Chen. "Training-free Design of Deep Networks as Ensembles of Clinical Experts." *Preprint on [medRxiv](https://www.medrxiv.org/content/10.1101/2024.03.17.24304438v3)*. This collaborative work presents TEACUP, a training-free evaluation framework that enables the creation of AI model ensembles for clinical applications, improving prediction robustness and uncertainty quantification.
+- Tinghui Wu<sup>&dagger;</sup>, **Jieke Wu<sup>&dagger;</sup>**, Zijun Zhang, Wuyang Chen. "Training-free Design of Deep Networks as Ensembles of Clinical Experts." *Preprint on [medRxiv](https://www.medrxiv.org/content/10.1101/2024.03.17.24304438v3)*. This collaborative work presents TEACUP, a training-free evaluation framework that enables the creation of AI model ensembles for clinical applications, improving prediction robustness and uncertainty quantification.
 
 # 🧪 Research Experience
 
