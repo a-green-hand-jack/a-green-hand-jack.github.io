@@ -53,6 +53,25 @@ If you are interested in collaborating on research projects or would like to dis
 
 # 🧪 Research Experience
 
+## 🔬 Boltz-Pep: Adapting a Structural Foundation Model for High-Accuracy Protein-Peptide Affinity Prediction via Multi-Stage Fine-Tuning and Structural Distillation
+**Prof. Xin Gao, KAUST** \\
+*Thuwal, Saudi Arabia* \\
+**Research Assistant** (09/2025 – Present)
+
+- Engineer and refactor the Boltz2 codebase to enhance support for protein-peptide affinity prediction and model training.
+- Fine-tune the Boltz2 structural foundation model to significantly improve its predictive accuracy for protein-peptide binding affinity.
+- Implement dual-modality input, enabling affinity prediction from both peptide sequences and ligand SMILES representations.
+- Extend the model's capacity by overcoming the original 128-atom limitation, enabling affinity prediction for larger and more complex molecular structures.
+
+## 💊 Predicting the Half-life of Oral Peptides in Gastrointestinal Fluids
+**Prof. Xin Gao, KAUST** \\
+*Thuwal, Saudi Arabia* \\
+**Research Assistant** (09/2025 – Present)
+
+- Develop an automated agent system to extract and manually calibrate data from patent documents, streamlining the data collection process.
+- Design and implement strategic dataset splits for robust model training and validation.
+- Conduct baseline experiments using binary classification models to validate the dataset and establish initial performance benchmarks.
+
 ## 🧬 Evaluation Task Design for GenomeOcean
 **Northwestern University, Prof. Han Liu** \\
 *Remote (US)* \\
