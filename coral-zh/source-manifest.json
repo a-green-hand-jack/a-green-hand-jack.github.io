@@ -1,0 +1,12 @@
+{
+  "project": "CORAL",
+  "translation": "zh-CN",
+  "officialDocumentation": "https://docs.coralxyz.com/",
+  "sourceRepository": "https://github.com/Human-Agent-Society/CORAL",
+  "sourceCommit": "09802fbb3c2a7a8c50488489eaf7481259364f2a",
+  "sourcePath": "docs/content/docs",
+  "translatedPageCount": 29,
+  "translationDate": "2026-07-13",
+  "license": "Apache-2.0",
+  "status": "unofficial-translation"
+}
