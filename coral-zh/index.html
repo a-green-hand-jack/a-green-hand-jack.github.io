@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>CORAL 中文文档</title>
+<style>
+html,body{height:100%;margin:0}body{display:grid;place-items:center;background:#f7f8fb;color:#172033;font:16px/1.7 system-ui,-apple-system,"Noto Sans SC","Microsoft YaHei",sans-serif}.loader{max-width:520px;padding:28px;text-align:center}.mark{font-size:44px}.bar{height:5px;margin:18px auto;width:240px;border-radius:999px;background:#e6e9ef;overflow:hidden}.bar:after{content:"";display:block;width:40%;height:100%;border-radius:inherit;background:#e05050;animation:move 1s infinite alternate ease-in-out}@keyframes move{to{transform:translateX(150%)}}small{color:#607087}button{border:0;border-radius:9px;background:#e05050;color:white;padding:8px 14px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="loader" id="loader"><div class="mark">🪸</div><strong>正在载入 CORAL 中文文档…</strong><div class="bar"></div><small>完整译本共 29 页</small></div>
+<script>
+(async()=>{
+  const box=document.getElementById('loader');
+  try{
+    if(!('DecompressionStream' in window)) throw new Error('当前浏览器不支持 DecompressionStream，请使用最新版 Chrome、Edge、Firefox 或 Safari。');
+    const names=['payload-00.txt','payload-01.txt','payload-02.txt','payload-03.txt','payload-04.txt','payload-05.txt'];
+    const parts=await Promise.all(names.map(async n=>{const r=await fetch(n,{cache:'force-cache'});if(!r.ok)throw new Error(`${n}: HTTP ${r.status}`);return r.text()}));
+    const b64=parts.join('').replace(/\s+/g,'');
+    const bin=atob(b64);const bytes=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
+    const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+    const html=await new Response(stream).text();
+    document.open();document.write(html);document.close();
+  }catch(err){console.error(err);box.innerHTML=`<div class="mark">⚠️</div><strong>文档载入失败</strong><p>${String(err.message||err)}</p><button onclick="location.reload()">重新载入</button>`;}
+})();
+</script>
+</body>
+</html>
