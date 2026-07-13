@@ -1,0 +1,65 @@
+name: Deploy CORAL Chinese Documentation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/deploy-coral-zh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-coral-zh
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download and verify deployment archive
+        env:
+          BASE_URL: https://coral-zh-a-green-hand-jack-20260713.loca.lt
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 12 --retry-all-errors --retry-delay 5 \
+            -H 'bypass-tunnel-reminder: true' \
+            "$BASE_URL/coral-zh-deploy.tar.gz" \
+            --output /tmp/coral-zh-deploy.tar.gz
+          curl --fail --location --retry 12 --retry-all-errors --retry-delay 5 \
+            -H 'bypass-tunnel-reminder: true' \
+            "$BASE_URL/coral-zh-deploy.tar.gz.sha256" \
+            --output /tmp/coral-zh-deploy.tar.gz.sha256
+          cd /tmp
+          sha256sum --check coral-zh-deploy.tar.gz.sha256
+          tar --list --gzip --file coral-zh-deploy.tar.gz
+
+      - name: Install the static site
+        run: |
+          set -euo pipefail
+          rm -rf coral-zh
+          mkdir -p coral-zh
+          tar --extract --gzip --file /tmp/coral-zh-deploy.tar.gz --directory coral-zh
+          test -s coral-zh/index.html
+          test -s coral-zh/LICENSE.txt
+          grep -q 'lang="zh-CN"' coral-zh/index.html
+          grep -q 'CORAL 中文文档' coral-zh/index.html
+
+      - name: Commit the verified site
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A coral-zh
+          if git diff --cached --quiet; then
+            echo 'No site changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Deploy complete CORAL Chinese documentation'
+          git push origin HEAD:main
