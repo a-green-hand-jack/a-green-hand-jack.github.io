@@ -1,0 +1,27 @@
+name: Remove one-time CORAL deployment workflows
+
+on:
+  push:
+    paths:
+      - ".github/workflows/cleanup-coral-zh-deployer.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Remove one-time deployment workflows
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/deploy-coral-zh.yml
+          rm -f .github/workflows/cleanup-coral-zh-deployer.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A .github/workflows
+          git commit -m 'Remove one-time CORAL deployment workflows'
+          git push origin HEAD:main
