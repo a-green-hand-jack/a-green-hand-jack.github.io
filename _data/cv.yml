@@ -40,10 +40,10 @@ cv:
           - "Relevant Coursework - Molecular Biology, Biochemistry, Structural Biology, Bioinformatics, Probability & Statistics"
           - Interdisciplinary background bridging wet-lab biology with computational modeling for AI-driven research
 
-    experience:
+    Experience:
       - company: KAUST, Prof. Basem Shihada
-        location: Thuwal, Saudi Arabia
         position: Research Assistant
+        location: Thuwal, Saudi Arabia
         start_date: 2025-09
         end_date: Present
         highlights:
@@ -52,8 +52,8 @@ cv:
           - Developing multi-agent systems for collaborative AI research
 
       - company: Northwestern University, Prof. Han Liu
-        location: Remote (US)
         position: Research Assistant
+        location: Remote (US)
         start_date: 2024-09
         end_date: 2024-11
         highlights:
@@ -62,8 +62,8 @@ cv:
           - Analyzed codon bias patterns for biological realism assessment
 
       - company: Simon Fraser University / Natera, Prof. Wuyang Chen & Dr. Zijun Zhang
-        location: Remote (US)
         position: Research Assistant
+        location: Remote (US)
         start_date: 2024-08
         end_date: 2025-05
         highlights:
@@ -72,8 +72,8 @@ cv:
           - Implemented ensemble modeling for clinical decision-making
 
       - company: UC Berkeley, Dr. Wuyang Chen
-        location: Remote (Canada)
         position: Research Assistant
+        location: Remote (Canada)
         start_date: 2023-06
         end_date: 2024-02
         highlights:
@@ -81,8 +81,8 @@ cv:
           - Published findings in ICML 2024 Workshop AI4Science
 
       - company: MoleculeMind
-        location: Shanghai, China
         position: Research Intern
+        location: Shanghai, China
         start_date: 2024-11
         end_date: 2025-08
         highlights:
@@ -92,67 +92,107 @@ cv:
           - Investigated Flow Matching on SE(3) as an alternative to diffusion, achieving faster convergence
           - Systematically analyzed iPAE and distogram metrics; deployed DiffAffinity online service with JAX compatibility
 
-    publications:
+    Publications:
       - title: "D-DOIT: Training-free Adaptation of Discrete Diffusion via Doob's h-Transform"
-        authors: Jieke Wu, Qijie Zhu, Weimin Wu, Zeqi Ye, Minshuo Chen, Han Liu
+        authors:
+          - Jieke Wu
+          - Qijie Zhu
+          - Weimin Wu
+          - Zeqi Ye
+          - Minshuo Chen
+          - Han Liu
+        releaseDate: 2026
         venue: NeurIPS 2026
-        year: 2026
+        summary: First-author paper on training-free adaptation of discrete diffusion models using Doob's h-transform.
 
       - title: "Training-free Design of Augmentations with Data-centric Principles"
-        authors: Jieke Wu, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen
+        authors:
+          - Jieke Wu
+          - Wei Huang
+          - Mingyuan Bai
+          - Xiaoling Hu
+          - Yi Duan
+          - Wuyang Chen
+        releaseDate: 2024
         venue: ICML 2024 Workshop AI4Science
-        year: 2024
+        summary: First-author workshop paper on training-free data augmentation design.
 
       - title: "Annealed Co-Generation: Disentangling Variables via Progressive Pairwise Modeling"
-        authors: Hantao Zhang, Jieke Wu, Mingda Xu, Xiao Hu, Yingxuan You, Pascal Fua
+        authors:
+          - Hantao Zhang
+          - Jieke Wu
+          - Mingda Xu
+          - Xiao Hu
+          - Yingxuan You
+          - Pascal Fua
+        releaseDate: 2026
         venue: arXiv preprint
-        year: 2026
 
       - title: "AnchorGen: Anchored Optimization for Customizable Generative 3D Design"
-        authors: Hantao Zhang, Oliver Heinimann, Jieke Wu, Yingxuan You, Emilien Seiler, Pascal Fua
+        authors:
+          - Hantao Zhang
+          - Oliver Heinimann
+          - Jieke Wu
+          - Yingxuan You
+          - Emilien Seiler
+          - Pascal Fua
+        releaseDate: 2026
         venue: arXiv preprint
-        year: 2026
 
       - title: "GenomeOcean: Efficient Foundation Model for Genome Generation"
-        authors: Zhihan Zhou, Weimin Wu, Jieke Wu, Lizhen Shi, Zhong Wang, Han Liu
+        authors:
+          - Zhihan Zhou
+          - Weimin Wu
+          - Jieke Wu
+          - Lizhen Shi
+          - Zhong Wang
+          - Han Liu
+        releaseDate: 2025
         venue: arXiv preprint
-        year: 2025
 
       - title: "Training-free Design of Deep Networks as Ensembles of Clinical Experts"
-        authors: Tinghui Wu, Jieke Wu, Zijun Zhang, Wuyang Chen
+        authors:
+          - Tinghui Wu
+          - Jieke Wu
+          - Zijun Zhang
+          - Wuyang Chen
+        releaseDate: 2024
         venue: medRxiv
-        year: 2024
 
-    honors_and_awards:
+    Awards:
       - title: Outstanding Graduate of USTC, Class of 2025
-        institution: USTC
-        year: 2025
+        awarder: USTC
+        date: 2025
 
       - title: University-level Outstanding Project (Undergraduate Innovation and Entrepreneurship Training Program)
-        institution: USTC
-        year: 2024
+        awarder: USTC
+        date: 2024
 
       - title: University-level Outstanding Project (College Student Research Program)
-        institution: USTC
-        year: 2023
+        awarder: USTC
+        date: 2023
 
       - title: 8th National College Student Life Science Competition, First Prize
-        institution: National Level
-        year: 2023
+        awarder: National Level
+        date: 2023
 
       - title: Outstanding Student Scholarship
-        institution: USTC
-        year: "2024, 2023, 2022, 2021"
+        awarder: USTC
+        date: "2024, 2023, 2022, 2021"
 
-    skills:
-      - label: Programming Languages
-        details: Python (Advanced), C/C++ (Strong foundation), MATLAB (Experience in numerical computing)
+    Skills:
+      - name: Programming Languages
+        level: ""
+        keywords: "Python (Advanced), C/C++ (Strong foundation), MATLAB (Experience in numerical computing)"
 
-      - label: AI/ML & Agent Frameworks
-        details: PyTorch, PyTorch Lightning, HuggingFace (transformers, diffusers, fine-tuning), JAX, LangChain, LangGraph, Pydantic AI, LoRA/PEFT
+      - name: AI/ML & Agent Frameworks
+        level: ""
+        keywords: "PyTorch, PyTorch Lightning, HuggingFace (transformers, diffusers, fine-tuning), JAX, LangChain, LangGraph, Pydantic AI, LoRA/PEFT"
 
-      - label: Research Areas
-        details: AI Scientist & Self-Improving AI, Multi-Agent RL, Generative Models (Diffusion, Flow Matching on SE(3)), Training-Free Methods, Geometric Deep Learning, Large Language Models (LLMs), Computational Biology
+      - name: Research Areas
+        level: ""
+        keywords: "AI Scientist & Self-Improving AI, Multi-Agent RL, Generative Models (Diffusion, Flow Matching on SE(3)), Training-Free Methods, Geometric Deep Learning, Large Language Models (LLMs), Computational Biology"
 
-      - label: Dev Tools
-        details: Git, Linux/Bash, Docker, SLURM/HPC, LaTeX, Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)
+      - name: Dev Tools
+        level: ""
+        keywords: "Git, Linux/Bash, Docker, SLURM/HPC, LaTeX, Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)"
