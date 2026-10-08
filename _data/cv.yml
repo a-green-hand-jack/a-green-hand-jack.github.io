@@ -194,18 +194,14 @@ cv:
 
     Skills:
       - name: Programming Languages
-        level: ""
         keywords: "Python (Advanced), C/C++ (Strong foundation), MATLAB (Experience in numerical computing)"
 
       - name: AI/ML & Agent Frameworks
-        level: ""
         keywords: "PyTorch, PyTorch Lightning, HuggingFace (transformers, diffusers, fine-tuning), JAX, LangChain, LangGraph, Pydantic AI, LoRA/PEFT"
 
       - name: Research Areas
-        level: ""
         keywords: "AI Scientist & Self-Improving AI, Multi-Agent RL, Generative Models (Diffusion, Flow Matching on SE(3)), Training-Free Methods, Geometric Deep Learning, Large Language Models (LLMs), Computational Biology"
 
       - name: Dev Tools
-        level: ""
         keywords: "Git, Linux/Bash, Docker, SLURM/HPC, LaTeX, Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)"
 
