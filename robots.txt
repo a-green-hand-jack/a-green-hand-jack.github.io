@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://a-green-hand-jack.github.io/sitemap.xml
