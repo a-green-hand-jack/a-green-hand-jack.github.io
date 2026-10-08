@@ -1,27 +1,34 @@
 ---
+layout: about
+title: about
 permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: Graduate Student at <a href='https://www.kaust.edu.sa/'>KAUST</a> | Computational Biology & AI Research
+
+profile:
+  align: right
+  image: prof_pic.png
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Thuwal, Saudi Arabia</p>
+    <p>jieke.wu@kaust.edu.sa</p>
+
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: false # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+I'm **Jieke (Jack) Wu** (武杰克), a graduate student at [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/), pursuing MS/PhD in Computer Science. I am a member of the [Structural and Functional Bioinformatics (SFB) Research Group](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of **computational biology**, **artificial intelligence**, and **protein design**.
 
-<span class='anchor' id='about-me'></span>
-
-
-# 👨🏼‍🎓 About me
-I'm Jieke (Jack) Wu (武杰克), a graduate student at [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), pursuing MS/PhD in Computer Science. I am a member of the [<span style="color:#21a675;">Structural and Functional Bioinformatics (SFB) Research Group</span>](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of computational biology, artificial intelligence, and protein design.
-
-My research journey began at the [<span style="color:#1bd1a5;">Department of Life Sciences and Medicine</span>](http://enbiomed.ustc.edu.cn/main.htm), [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology with a strong academic foundation. This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
+My research journey began at the [Department of Life Sciences and Medicine](http://enbiomed.ustc.edu.cn/main.htm), [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology. This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
 
 **My current research interests focus on:**
 - **Protein Design**: Developing advanced generative models for de novo protein design and structure prediction
@@ -32,199 +39,3 @@ My research journey began at the [<span style="color:#1bd1a5;">Department of Lif
 I am actively researching generative models including **diffusion models** and **flow matching** techniques, as well as developing intelligent **agents** for various applications in computational biology and healthcare.
 
 If you are interested in collaborating on research projects or would like to discuss potential opportunities, please feel free to contact me at [jieke.wu@kaust.edu.sa](mailto:jieke.wu@kaust.edu.sa).
-
-# 📖 Educations
-
-- *Sept. 2025 – Present*: **MS/PhD in Computer Science**, [<span style="color:#1bd1a5;">King Abdullah University of Science and Technology (KAUST)</span>](https://www.kaust.edu.cn/en/), Thuwal, Saudi Arabia
-  - Member of the Structural and Functional Bioinformatics (SFB) Research Group
-  - Research focus: Computational biology, AI, and protein design
-  - Advisor: Prof. Xin Gao
-
-- *Aug. 2021 – July 2025*: **B.S. in Biological Technology**, School of Life Sciences, [<span style="color:#21a675;">University of Science and Technology of China</span>](https://www.ustc.edu.cn/)
-  <!-- - **GPA**: 84.96/100, **Rank**: 29/91 -->
-  <!-- - **Core Courses**: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+), Undergraduate Innovation and Entrepreneurship Training Program (A+) -->
-
-<!-- - *Sept. 2018 – June 2021*: [<span style="color:#41555d;">The Middle School Attached To Northwestern Polytechnical University</span>](http://www.xgdfz.com/) -->
-
-# 📑 Publications
-- **Jieke Wu**, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen. "Training-free Design of Augmentations with Data-centric Principles." *ICML 2024 Workshop AI4Science*. This work introduces a novel framework for evaluating data augmentation strategies without requiring expensive model training, significantly reducing computational costs while maintaining accuracy.
-
-- Tinghui Wu<sup>&dagger;</sup>, **Jieke Wu<sup>&dagger;</sup>**, Zijun Zhang, Wuyang Chen. "Training-free Design of Deep Networks as Ensembles of Clinical Experts." *Preprint on [medRxiv](https://www.medrxiv.org/content/10.1101/2024.03.17.24304438v3)*. This collaborative work presents TEACUP, a training-free evaluation framework that enables the creation of AI model ensembles for clinical applications, improving prediction robustness and uncertainty quantification.
-
-# 🧪 Research Experience
-
-## 🔬 Boltz-Pep: Adapting a Structural Foundation Model for High-Accuracy Protein-Peptide Affinity Prediction via Multi-Stage Fine-Tuning and Structural Distillation
-**Prof. Xin Gao, KAUST** \\
-*Thuwal, Saudi Arabia* \\
-**Research Assistant** (09/2025 – Present)
-
-- Engineer and refactor the Boltz2 codebase to enhance support for protein-peptide affinity prediction and model training.
-- Fine-tune the Boltz2 structural foundation model to significantly improve its predictive accuracy for protein-peptide binding affinity.
-- Implement dual-modality input, enabling affinity prediction from both peptide sequences and ligand SMILES representations.
-- Extend the model's capacity by overcoming the original 128-atom limitation, enabling affinity prediction for larger and more complex molecular structures.
-
-## 💊 Predicting the Half-life of Oral Peptides in Gastrointestinal Fluids
-**Prof. Xin Gao, KAUST** \\
-*Thuwal, Saudi Arabia* \\
-**Research Assistant** (09/2025 – Present)
-
-- Develop an automated agent system to extract and manually calibrate data from patent documents, streamlining the data collection process.
-- Design and implement strategic dataset splits for robust model training and validation.
-- Conduct baseline experiments using binary classification models to validate the dataset and establish initial performance benchmarks.
-
-## 🧬 Evaluation Task Design for GenomeOcean
-**Northwestern University, Prof. Han Liu** \\
-*Remote (US)* \\
-**Research Assistant** (09/2024 – 11/2024)
-
-This project focused on developing comprehensive evaluation metrics for assessing the quality and biological plausibility of DNA sequences generated by the GenomeOcean model. My contributions included:
-
-- **Designed novel evaluation metrics** to assess the novelty and biological plausibility of generated DNA sequences, ensuring they meet real-world biological constraints
-- **Conducted comparative analysis** of open reading frame (ORF) length distributions between model-generated sequences and real DNA sequences, providing quantitative measures of sequence consistency
-- **Analyzed codon bias patterns** to evaluate the biological realism of generated sequences, comparing them against established genomic databases
-- **Demonstrated superior performance** of GenomeOcean compared to state-of-the-art models, achieving significant improvements in both ORF length distribution accuracy and codon bias consistency
-- **Developed automated evaluation pipelines** that can be applied to assess other DNA generation models, contributing to the broader field of computational genomics
-
-## 🧠 Biology Learning Assistant Powered by GenAI
-**Northwestern University, Prof. Han Liu** \\
-*Remote (US)* \\
-**Research Assistant** (07/2024 – 09/2024)
-
-This innovative project aimed to revolutionize high school biology education through the application of large language models. My key contributions included:
-
-- **Developed fine-tuned large language models** using Low-Rank Adaptation (LoRA) techniques, specifically optimized for high school biology education content
-- **Created comprehensive training datasets** by processing biology textbooks using advanced OCR tools and integrating with Qwen2-API for content enhancement
-- **Established a new benchmark** using 20 years of National High School Biology Competition questions, providing a robust evaluation framework for educational AI systems
-- **Demonstrated superior performance** of the fine-tuned Qwen2 model compared to baseline student performance, showing significant improvements in accuracy and explanation quality
-- **Implemented adaptive learning features** that can personalize educational content based on student performance and learning patterns
-
-## 💻 Training-free Design of Deep Networks (TEACUP)
-**Natera, Dr. Zijun Zhang** \\
-**Simon Fraser University, Prof. Wuyang Chen** \\
-*Remote (US)* \\
-**Research Assistant** (08/2024 – 05/2025)
-
-This groundbreaking project developed TEACUP (Training-free Evaluation of AI Clinical Understanding and Performance), a novel framework that revolutionizes how we evaluate clinical AI systems:
-
-- **Developed TEACUP framework** that provides training-free evaluation of clinical AI network performance, eliminating the need for expensive model training cycles
-- **Achieved 90% reduction in computational costs** while simultaneously improving clinical task performance across multiple medical imaging datasets
-- **Implemented ensemble modeling strategies** that simulate the collaborative decision-making of multiple human experts in clinical settings
-- **Enhanced prediction robustness** and uncertainty quantification, crucial for medical applications where reliability is paramount
-- **Created scalable evaluation protocols** that can be applied across different clinical domains and imaging modalities
-
-## 🧬 Hierarchical Transformer for Genomics
-**Cedars-Sinai Medical Center, Prof. Zijun Zhang** \\
-**Simon Fraser University, Prof. Wuyang Chen** \\
-*Remote (US)* \\
-**Research Assistant** (03/2024 – 08/2024)
-
-This project explored the application of advanced deep learning techniques to uncover hidden patterns in DNA sequences:
-
-- **Investigated hidden patterns** in DNA sequences using hierarchical transformer architectures, enabling both local and global sequence analysis
-- **Improved model performance** by developing methods that integrate global context with localized genomic information, achieving better prediction accuracy
-- **Enhanced understanding of LLMs** and gained proficiency with HuggingFace and other deep learning toolboxes for genomic applications
-- **Developed novel attention mechanisms** that can capture both short-range and long-range dependencies in DNA sequences
-- **Applied transfer learning techniques** to leverage pre-trained models for specific genomic prediction tasks
-
-## 🖥 Training-free Data-centric Augmentations
-**UC Berkeley, Dr. Wuyang Chen** \\
-*Remote (Canada)* \\
-**Research Assistant** (06/2023 – 02/2024)
-
-This research focused on developing training-free methods for evaluating and designing data augmentation strategies:
-
-- **Developed innovative metrics** for data quality evaluation based on deep learning theory, providing quantitative measures of dataset characteristics
-- **Introduced training-free data augmentation design** principles that reduce computational costs while maintaining model performance
-- **Improved medical image segmentation performance** across multiple datasets, demonstrating the effectiveness of the proposed methods
-- **Investigated the relationship** between data covariance properties and image recognition accuracy, providing theoretical insights
-- **Published findings** in the ICML 2024 Workshop AI4Science, contributing to the broader AI4Science community
-
-## 🐀 Isolation of Bacteriophages Targeting Gut Bacteria
-**University of Science and Technology of China, Prof. Yi Duan** \\
-*Hefei, China* \\
-**Research Assistant** (01/2023 – 05/2024)
-
-This project addressed critical challenges in gut microbiome research through innovative bacteriophage isolation techniques:
-
-<!-- - **Improved \textit{A. muciniphila} culture system** by eliminating \textit{C. acnes} contamination, solving a persistent problem in gut microbiome research -->
-- **Isolated Akk-targeting phages** from wastewater samples, creating a comprehensive phage library for gut microbiome manipulation
-- **Developed novel purification protocols** that maintain phage viability while removing contaminants
-- **Characterized phage-host interactions** to understand the specificity and efficiency of the isolated phages
-- **Received outstanding rating** as a school-level research initiative, recognizing the project's innovation and potential impact
-
-## 🦟 Biodegradable Needles for Transdermal Delivery
-**Suzhou Institute for Advanced Research, Prof. Xiaorong Xu** \\
-*Suzhou, China* \\
-**Research Assistant** (11/2022 – 09/2023)
-
-This interdisciplinary project combined materials science, mechanical engineering, and biomedical applications:
-
-- **Simulated finite elements** using COMSOL and Abaqus to optimize needle design for deep tissue penetration
-- **Optimized long microneedles** for treating deep tissue infections, considering both mechanical properties and biological compatibility
-- **Developed novel injection molding techniques** for economically producing complex microneedle structures
-- **Conducted mechanical testing** to ensure needles can penetrate skin layers while maintaining structural integrity
-- **Received recognition** as an outstanding school-level project for its innovative approach to drug delivery
-
-## 🦠 Isolation of Cyanobacteria and Cyanophages from Lake Chaohu
-**Laboratory of Biochemistry & Structural Biology, Prof. Congzhao Zhou** \\
-*Hefei, China* \\
-**Research Assistant** (09/2022 – 06/2023)
-
-This environmental microbiology project contributed to our understanding of freshwater ecosystems:
-
-- **Isolated three distinct strains** of cyanobacteria and their corresponding cyanophages from Lake Chaohu water samples
-- **Conducted comprehensive genomic analysis** to determine taxonomic classification and ecological roles
-<!-- - **Characterized phage-host interactions** to understand the dynamics of cyanobacterial populations -->
-<!-- - **Awarded recognition** at the National University Life Science Competition in 2023 for scientific excellence -->
-- **Contributed to freshwater ecosystem** understanding and potential applications in environmental monitoring
-
-# 💻 Internships
-
-## 🧬 Protein Generation Model Research
-**MoleculeMind, Shanghai** \\
-*Shanghai, China* \\
-**Research Intern** (11/2024 – 06/2025)
-
-This cutting-edge internship focused on developing next-generation protein generation models using advanced AI techniques:
-
-- **Developed unconditional protein generation models** using diffusion techniques in SE(3) space, enabling de novo protein design with unprecedented accuracy
-<!-- - **Implemented and optimized training pipelines** for protein generation models, achieving efficient and scalable deployment across different computational resources -->
-- **Investigated Flow Matching techniques** in SE(3) space to enhance the generative capabilities of protein models, improving sampling efficiency and quality
-- **Explored conditional protein generation tasks** including De novo design and binder design, advancing the model's applicability in drug discovery and synthetic biology
-<!-- - **Collaborated with interdisciplinary teams** to integrate biological constraints and validation methods into the AI pipeline -->
-- **Contributed to the development** of tools that can accelerate drug discovery processes and protein engineering applications
-
-# 🎖 Honors and Awards
-- **Outstanding Graduates of the Class of 2025** from the University of Science and Technology of China (2025) - Recognized for academic excellence and research contributions
-- **Outstanding School-Level Project**: Undergraduate Innovation and Entrepreneurship Training Program (2024) - For innovative bacteriophage isolation techniques
-- **Outstanding School-Level Project**: Undergraduate Research Project (2023) - For biodegradable microneedle development
-- **8th National University Life Science Competition, A Prize** (2023) - For cyanobacteria and cyanophage research
-- **Outstanding Undergraduate Scholarship** (2024, 2023, 2022, 2021) - Consistent academic excellence over four years
-
-# 🧭 Skills
-
-## **Programming Languages**
-- **[Python](https://www.python.org/)**: Advanced proficiency in scientific computing, machine learning, and bioinformatics applications
-- **[C/C++](https://isocpp.org/)**: Strong foundation in systems programming and performance-critical applications
-- **[Matlab](https://ww2.mathworks.cn/products/matlab.html)**: Experience in numerical computing and signal processing
-
-## **Frameworks** and Tools
-- **[HuggingFace](https://huggingface.co/)**: Expertise in transformer models, fine-tuning, and deployment of large language models
-- **[PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)**: Advanced deep learning workflows and distributed training
-- **[PyTorch](https://pytorch.org/)**: Comprehensive experience in deep learning model development and optimization
-- **[Git](https://git-scm.com/)**: Version control and collaborative development practices
-- **[$\LaTeX$](https://www.latex-project.org/)**: Professional document preparation and academic writing
-
-<!-- ## **Domain-Specific Skills**
-- **Computational Biology**: Protein structure prediction, genomic analysis, and bioinformatics pipelines
-- **Machine Learning**: Deep learning, transfer learning, and model evaluation frameworks
-- **Medical AI**: Clinical data analysis, medical imaging, and healthcare applications
-- **Research Methods**: Experimental design, statistical analysis, and scientific communication -->
-
-# 🎥 Personal Interests
-- **Anime**: As a pastime in my spare time, I enjoy watching Japanese anime spanning various genres including romance, sports, mythology, and science fiction. This hobby helps me maintain creativity and cultural awareness while providing relaxation from intensive research work.
-
-- **Interdisciplinary Learning**: I am passionate about exploring the intersections between different fields, particularly how computational methods can advance biological research and medical applications.
-
-- **Open Source Contribution**: I believe in the power of collaborative development and actively contribute to open-source projects in the AI and bioinformatics communities.
-

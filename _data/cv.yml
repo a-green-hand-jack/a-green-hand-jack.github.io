@@ -1,0 +1,136 @@
+cv:
+  name: Jieke (Jack) Wu
+  label: Graduate Student
+  email: jieke.wu@kaust.edu.sa
+  location: Thuwal, Saudi Arabia
+  image: ""
+  summary: Graduate student at KAUST focusing on computational biology, artificial intelligence, and protein design. Bridging the gap between biological research and modern computational approaches.
+
+  social_networks:
+    - network: GitHub
+      username: a-green-hand-jack
+    - network: Google Scholar
+      username: nCqN-psAAAAJ
+
+  sections:
+    Education:
+      - institution: King Abdullah University of Science and Technology (KAUST)
+        location: Thuwal, Saudi Arabia
+        url: https://www.kaust.edu.sa/
+        area: Computer Science
+        studyType: MS/PhD
+        start_date: 2025-09
+        end_date: Present
+        score: ""
+        courses: ""
+        highlights:
+          - Member of the Structural and Functional Bioinformatics (SFB) Research Group
+          - Research focus on computational biology, AI, and protein design
+          - Advisor: Prof. Xin Gao
+
+      - institution: University of Science and Technology of China (USTC)
+        location: Hefei, China
+        url: https://www.ustc.edu.cn/
+        area: Biological Technology
+        studyType: B.S.
+        start_date: 2021-08
+        end_date: 2025-07
+        score: ""
+        courses: ""
+        highlights:
+          - Department of Life Sciences and Medicine
+
+    Research Experience:
+      - institution: KAUST, Prof. Xin Gao
+        location: Thuwal, Saudi Arabia
+        position: Research Assistant
+        start_date: 2025-09
+        end_date: Present
+        highlights:
+          - Engineer and refactor the Boltz2 codebase for protein-peptide affinity prediction
+          - Fine-tune Boltz2 structural foundation model for binding affinity prediction
+          - Implement dual-modality input (peptide sequences and ligand SMILES)
+          - Extend model capacity beyond original 128-atom limitation
+
+      - institution: Northwestern University, Prof. Han Liu
+        location: Remote (US)
+        position: Research Assistant
+        start_date: 2024-09
+        end_date: 2024-11
+        highlights:
+          - Designed evaluation metrics for GenomeOcean DNA sequence generation model
+          - Conducted comparative analysis of ORF length distributions
+          - Analyzed codon bias patterns for biological realism assessment
+
+      - institution: Simon Fraser University / Natera, Prof. Wuyang Chen & Dr. Zijun Zhang
+        location: Remote (US)
+        position: Research Assistant
+        start_date: 2024-08
+        end_date: 2025-05
+        highlights:
+          - Developed TEACUP framework for training-free evaluation of clinical AI systems
+          - Achieved 90% reduction in computational costs
+          - Implemented ensemble modeling for clinical decision-making
+
+      - institution: UC Berkeley, Dr. Wuyang Chen
+        location: Remote (Canada)
+        position: Research Assistant
+        start_date: 2023-06
+        end_date: 2024-02
+        highlights:
+          - Developed training-free data augmentation design principles
+          - Published findings in ICML 2024 Workshop AI4Science
+
+    Internships:
+      - institution: MoleculeMind
+        location: Shanghai, China
+        position: Research Intern
+        start_date: 2024-11
+        end_date: 2025-06
+        highlights:
+          - Developed unconditional protein generation models using diffusion in SE(3) space
+          - Investigated Flow Matching techniques for protein generation
+          - Explored conditional protein generation (de novo design and binder design)
+
+    Publications:
+      - title: "Training-free Design of Augmentations with Data-centric Principles"
+        authors: Jieke Wu, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen
+        venue: ICML 2024 Workshop AI4Science
+        year: 2024
+
+      - title: "Training-free Design of Deep Networks as Ensembles of Clinical Experts"
+        authors: Tinghui Wu, Jieke Wu, Zijun Zhang, Wuyang Chen
+        venue: medRxiv Preprint
+        year: 2024
+
+    Honors and Awards:
+      - title: Outstanding Graduates of the Class of 2025
+        institution: USTC
+        year: 2025
+
+      - title: Outstanding School-Level Project (Undergraduate Innovation and Entrepreneurship)
+        institution: USTC
+        year: 2024
+
+      - title: 8th National University Life Science Competition, A Prize
+        institution: National Level
+        year: 2023
+
+      - title: Outstanding Undergraduate Scholarship
+        institution: USTC
+        year: 2024, 2023, 2022, 2021
+
+    Skills:
+      - title: Programming Languages
+        items:
+          - Python (Advanced)
+          - C/C++ (Strong foundation)
+          - MATLAB (Experience in numerical computing)
+
+      - title: Frameworks and Tools
+        items:
+          - HuggingFace (transformer models, fine-tuning, LLM deployment)
+          - PyTorch Lightning (advanced deep learning workflows)
+          - PyTorch (comprehensive experience)
+          - Git (version control)
+          - LaTeX (professional document preparation)
