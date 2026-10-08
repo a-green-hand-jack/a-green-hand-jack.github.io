@@ -21,13 +21,11 @@ cv:
         studyType: MS/PhD
         start_date: 2025-09
         end_date: Present
-        score: ""
-        courses: ""
         highlights:
           - Member of the Intelligent Systems Lab
-          - Research focus on AI Scientist, Self-Improving AI, and Multi-Agent RL
-          - Advisor: Prof. Basem Shihada
-          - Relevant Coursework: Deep Learning for Visual Computing, Scientific Visualization, Robotics
+          - "Advisor - Prof. Basem Shihada"
+          - "Research Focus - AI Scientist, Self-Improving AI, and Multi-Agent RL"
+          - "Relevant Coursework - Deep Learning for Visual Computing, Scientific Visualization, Robotics"
 
       - institution: University of Science and Technology of China (USTC)
         location: Hefei, China
@@ -36,16 +34,14 @@ cv:
         studyType: B.S.
         start_date: 2021-08
         end_date: 2025-07
-        score: "GPA: 84.96/100, Rank: 29/91"
-        courses: ""
         highlights:
           - Department of Life Sciences and Medicine
-          - Core Courses: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+)
-          - Relevant Coursework: Molecular Biology, Biochemistry, Structural Biology, Bioinformatics, Probability & Statistics
+          - "Core Courses - Linear Algebra B1, Electromagnetism B, Undergraduate Research Project (A+)"
+          - "Relevant Coursework - Molecular Biology, Biochemistry, Structural Biology, Bioinformatics, Probability & Statistics"
           - Interdisciplinary background bridging wet-lab biology with computational modeling for AI-driven research
 
-    Research Experience:
-      - institution: KAUST, Prof. Basem Shihada
+    experience:
+      - company: KAUST, Prof. Basem Shihada
         location: Thuwal, Saudi Arabia
         position: Research Assistant
         start_date: 2025-09
@@ -55,7 +51,7 @@ cv:
           - Exploring generative models for scientific discovery
           - Developing multi-agent systems for collaborative AI research
 
-      - institution: Northwestern University, Prof. Han Liu
+      - company: Northwestern University, Prof. Han Liu
         location: Remote (US)
         position: Research Assistant
         start_date: 2024-09
@@ -65,7 +61,7 @@ cv:
           - Conducted comparative analysis of ORF length distributions
           - Analyzed codon bias patterns for biological realism assessment
 
-      - institution: Simon Fraser University / Natera, Prof. Wuyang Chen & Dr. Zijun Zhang
+      - company: Simon Fraser University / Natera, Prof. Wuyang Chen & Dr. Zijun Zhang
         location: Remote (US)
         position: Research Assistant
         start_date: 2024-08
@@ -75,7 +71,7 @@ cv:
           - Achieved 90% reduction in computational costs
           - Implemented ensemble modeling for clinical decision-making
 
-      - institution: UC Berkeley, Dr. Wuyang Chen
+      - company: UC Berkeley, Dr. Wuyang Chen
         location: Remote (Canada)
         position: Research Assistant
         start_date: 2023-06
@@ -84,8 +80,7 @@ cv:
           - Developed training-free data augmentation design principles
           - Published findings in ICML 2024 Workshop AI4Science
 
-    Industry Research:
-      - institution: MoleculeMind
+      - company: MoleculeMind
         location: Shanghai, China
         position: Research Intern
         start_date: 2024-11
@@ -97,7 +92,7 @@ cv:
           - Investigated Flow Matching on SE(3) as an alternative to diffusion, achieving faster convergence
           - Systematically analyzed iPAE and distogram metrics; deployed DiffAffinity online service with JAX compatibility
 
-    Publications:
+    publications:
       - title: "D-DOIT: Training-free Adaptation of Discrete Diffusion via Doob's h-Transform"
         authors: Jieke Wu, Qijie Zhu, Weimin Wu, Zeqi Ye, Minshuo Chen, Han Liu
         venue: NeurIPS 2026
@@ -128,7 +123,7 @@ cv:
         venue: medRxiv
         year: 2024
 
-    Honors and Awards:
+    honors_and_awards:
       - title: Outstanding Graduate of USTC, Class of 2025
         institution: USTC
         year: 2025
@@ -149,36 +144,15 @@ cv:
         institution: USTC
         year: "2024, 2023, 2022, 2021"
 
-    Skills:
-      - title: Programming Languages
-        items:
-          - Python (Advanced)
-          - C/C++ (Strong foundation)
-          - MATLAB (Experience in numerical computing)
+    skills:
+      - label: Programming Languages
+        details: Python (Advanced), C/C++ (Strong foundation), MATLAB (Experience in numerical computing)
 
-      - title: AI/ML & Agent Frameworks
-        items:
-          - PyTorch, PyTorch Lightning
-          - HuggingFace (transformers, diffusers, fine-tuning)
-          - JAX
-          - LangChain, LangGraph
-          - Pydantic AI
-          - LoRA/PEFT
+      - label: AI/ML & Agent Frameworks
+        details: PyTorch, PyTorch Lightning, HuggingFace (transformers, diffusers, fine-tuning), JAX, LangChain, LangGraph, Pydantic AI, LoRA/PEFT
 
-      - title: Research Areas
-        items:
-          - AI Scientist & Self-Improving AI
-          - Multi-Agent RL
-          - Generative Models (Diffusion, Flow Matching on SE(3))
-          - Training-Free Methods
-          - Geometric Deep Learning
-          - Large Language Models (LLMs)
-          - Computational Biology
+      - label: Research Areas
+        details: AI Scientist & Self-Improving AI, Multi-Agent RL, Generative Models (Diffusion, Flow Matching on SE(3)), Training-Free Methods, Geometric Deep Learning, Large Language Models (LLMs), Computational Biology
 
-      - title: Dev Tools
-        items:
-          - Git, Linux/Bash
-          - Docker
-          - SLURM/HPC
-          - LaTeX
-          - Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)
+      - label: Dev Tools
+        details: Git, Linux/Bash, Docker, SLURM/HPC, LaTeX, Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)
