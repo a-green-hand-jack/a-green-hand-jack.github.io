@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Graduate Student at <a href='https://www.kaust.edu.sa/'>KAUST</a> | Computational Biology & AI Research
+subtitle: Graduate Student at <a href='https://www.kaust.edu.sa/'>KAUST</a> | AI Research
 
 profile:
   align: right
@@ -26,16 +26,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm **Jieke (Jack) Wu** (武杰克), a graduate student at [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/), pursuing MS/PhD in Computer Science. I am a member of the [Structural and Functional Bioinformatics (SFB) Research Group](https://sfb.kaust.edu.sa/), led by Prof. Xin Gao, where I focus on cutting-edge research at the intersection of **computational biology**, **artificial intelligence**, and **protein design**.
+I'm **Jieke (Jack) Wu** (武杰克), a graduate student at [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/), pursuing MS/PhD in Computer Science. I am a member of the [Intelligent Systems Lab](https://shihada.kaust.edu.sa/), led by Prof. Basem Shihada, where I focus on cutting-edge research at the intersection of **artificial intelligence**, **multi-agent systems**, and **scientific discovery**.
 
 My research journey began at the [Department of Life Sciences and Medicine](http://enbiomed.ustc.edu.cn/main.htm), [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/), where I earned my B.S. in Biological Technology. This interdisciplinary background has uniquely positioned me to bridge the gap between traditional biological research and modern computational approaches.
 
 **My current research interests focus on:**
-- **Protein Design**: Developing advanced generative models for de novo protein design and structure prediction
-- **Multi-Agent Systems**: Exploring intelligent agent frameworks for complex biological and medical tasks
-- **AI + Drug Discovery**: Leveraging artificial intelligence to accelerate pharmaceutical development and drug design
-- **AI + Healthcare**: Creating AI solutions for medical diagnosis, treatment optimization, and personalized medicine
+- **AI Scientist**: Developing autonomous AI systems for scientific discovery and research automation
+- **Self-Improving AI**: Building systems that can iteratively improve their own capabilities and reasoning
+- **Multi-Agent RL**: Exploring multi-agent reinforcement learning frameworks for complex collaborative tasks
+- **AI4AI / AI4SCI / AI4Video**: Applying AI to advance AI itself, scientific computing, and video understanding
 
-I am actively researching generative models including **diffusion models** and **flow matching** techniques, as well as developing intelligent **agents** for various applications in computational biology and healthcare.
+I am actively researching generative models including **diffusion models** and **flow matching** techniques, as well as developing intelligent **multi-agent systems** for various applications in AI research and scientific discovery.
 
 If you are interested in collaborating on research projects or would like to discuss potential opportunities, please feel free to contact me at [jieke.wu@kaust.edu.sa](mailto:jieke.wu@kaust.edu.sa).
