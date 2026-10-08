@@ -25,20 +25,24 @@ cv:
         courses: ""
         highlights:
           - Member of the Intelligent Systems Lab
-          - Research focus on AI, multi-agent systems, and scientific discovery
+          - Research focus on AI Scientist, Self-Improving AI, and Multi-Agent RL
           - Advisor: Prof. Basem Shihada
+          - Relevant Coursework: Deep Learning for Visual Computing, Scientific Visualization, Robotics
 
       - institution: University of Science and Technology of China (USTC)
         location: Hefei, China
         url: https://www.ustc.edu.cn/
-        area: Biological Technology
+        area: Life Sciences (Biotechnology)
         studyType: B.S.
         start_date: 2021-08
         end_date: 2025-07
-        score: ""
+        score: "GPA: 84.96/100, Rank: 29/91"
         courses: ""
         highlights:
           - Department of Life Sciences and Medicine
+          - Core Courses: Linear Algebra B1 (90/100), Electromagnetism B (90/100), Undergraduate Research Project (A+)
+          - Relevant Coursework: Molecular Biology, Biochemistry, Structural Biology, Bioinformatics, Probability & Statistics
+          - Interdisciplinary background bridging wet-lab biology with computational modeling for AI-driven research
 
     Research Experience:
       - institution: KAUST, Prof. Basem Shihada
@@ -80,44 +84,70 @@ cv:
           - Developed training-free data augmentation design principles
           - Published findings in ICML 2024 Workshop AI4Science
 
-    Internships:
+    Industry Research:
       - institution: MoleculeMind
         location: Shanghai, China
         position: Research Intern
         start_date: 2024-11
-        end_date: 2025-06
+        end_date: 2025-08
         highlights:
-          - Developed unconditional protein generation models using diffusion in SE(3) space
-          - Investigated Flow Matching techniques for protein generation
-          - Explored conditional protein generation (de novo design and binder design)
+          - Designed and implemented an unconditional protein backbone generation model using SE(3) diffusion (DDPM on SO(3))
+          - Developed an epitope-conditioned binder design framework via cross-attention over target structure features
+          - Extended the SE3Diffusion Binder module to support multi-chain protein binder generation
+          - Investigated Flow Matching on SE(3) as an alternative to diffusion, achieving faster convergence
+          - Systematically analyzed iPAE and distogram metrics; deployed DiffAffinity online service with JAX compatibility
 
     Publications:
+      - title: "D-DOIT: Training-free Adaptation of Discrete Diffusion via Doob's h-Transform"
+        authors: Jieke Wu, Qijie Zhu, Weimin Wu, Zeqi Ye, Minshuo Chen, Han Liu
+        venue: NeurIPS 2026
+        year: 2026
+
       - title: "Training-free Design of Augmentations with Data-centric Principles"
         authors: Jieke Wu, Wei Huang, Mingyuan Bai, Xiaoling Hu, Yi Duan, Wuyang Chen
         venue: ICML 2024 Workshop AI4Science
         year: 2024
 
+      - title: "Annealed Co-Generation: Disentangling Variables via Progressive Pairwise Modeling"
+        authors: Hantao Zhang, Jieke Wu, Mingda Xu, Xiao Hu, Yingxuan You, Pascal Fua
+        venue: arXiv preprint
+        year: 2026
+
+      - title: "AnchorGen: Anchored Optimization for Customizable Generative 3D Design"
+        authors: Hantao Zhang, Oliver Heinimann, Jieke Wu, Yingxuan You, Emilien Seiler, Pascal Fua
+        venue: arXiv preprint
+        year: 2026
+
+      - title: "GenomeOcean: Efficient Foundation Model for Genome Generation"
+        authors: Zhihan Zhou, Weimin Wu, Jieke Wu, Lizhen Shi, Zhong Wang, Han Liu
+        venue: arXiv preprint
+        year: 2025
+
       - title: "Training-free Design of Deep Networks as Ensembles of Clinical Experts"
         authors: Tinghui Wu, Jieke Wu, Zijun Zhang, Wuyang Chen
-        venue: medRxiv Preprint
+        venue: medRxiv
         year: 2024
 
     Honors and Awards:
-      - title: Outstanding Graduates of the Class of 2025
+      - title: Outstanding Graduate of USTC, Class of 2025
         institution: USTC
         year: 2025
 
-      - title: Outstanding School-Level Project (Undergraduate Innovation and Entrepreneurship)
+      - title: University-level Outstanding Project (Undergraduate Innovation and Entrepreneurship Training Program)
         institution: USTC
         year: 2024
 
-      - title: 8th National University Life Science Competition, A Prize
+      - title: University-level Outstanding Project (College Student Research Program)
+        institution: USTC
+        year: 2023
+
+      - title: 8th National College Student Life Science Competition, First Prize
         institution: National Level
         year: 2023
 
-      - title: Outstanding Undergraduate Scholarship
+      - title: Outstanding Student Scholarship
         institution: USTC
-        year: 2024, 2023, 2022, 2021
+        year: "2024, 2023, 2022, 2021"
 
     Skills:
       - title: Programming Languages
@@ -126,10 +156,29 @@ cv:
           - C/C++ (Strong foundation)
           - MATLAB (Experience in numerical computing)
 
-      - title: Frameworks and Tools
+      - title: AI/ML & Agent Frameworks
         items:
-          - HuggingFace (transformer models, fine-tuning, LLM deployment)
-          - PyTorch Lightning (advanced deep learning workflows)
-          - PyTorch (comprehensive experience)
-          - Git (version control)
-          - LaTeX (professional document preparation)
+          - PyTorch, PyTorch Lightning
+          - HuggingFace (transformers, diffusers, fine-tuning)
+          - JAX
+          - LangChain, LangGraph
+          - Pydantic AI
+          - LoRA/PEFT
+
+      - title: Research Areas
+        items:
+          - AI Scientist & Self-Improving AI
+          - Multi-Agent RL
+          - Generative Models (Diffusion, Flow Matching on SE(3))
+          - Training-Free Methods
+          - Geometric Deep Learning
+          - Large Language Models (LLMs)
+          - Computational Biology
+
+      - title: Dev Tools
+        items:
+          - Git, Linux/Bash
+          - Docker
+          - SLURM/HPC
+          - LaTeX
+          - Vibe-coding Tools (Cursor, Claude Code, OpenAI Codex)
