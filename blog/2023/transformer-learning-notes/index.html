@@ -1,0 +1,234 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Transformer Learning Notes | Jieke (Jack) Wu </title> <meta name="author" content="Jieke (Jack) Wu"> <meta name="description" content="A beginner-friendly walkthrough of the Transformer architecture, covering self-attention, multi-head attention, encoder-decoder structure, and positional encoding."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://a-green-hand-jack.github.io/blog/2023/transformer-learning-notes/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jieke</span> (Jack) Wu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Transformer Learning Notes</h1> <p class="post-meta"> Created on September 21, 2023 </p> <p class="post-tags"> <a href="/blog/2023"> <i class="fa-solid fa-calendar fa-sm"></i> 2023 </a>   ·   <a href="/blog/tag/machine-learning"> <i class="fa-solid fa-hashtag fa-sm"></i> Machine Learning</a>   <a href="/blog/tag/transformer"> <i class="fa-solid fa-hashtag fa-sm"></i> Transformer</a>   ·   <a href="/blog/category/deep-learning"> <i class="fa-solid fa-tag fa-sm"></i> deep-learning</a>   <a href="/blog/category/fundamentals"> <i class="fa-solid fa-tag fa-sm"></i> fundamentals</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h2 id="preface">Preface</h2> <p><a href="http://arxiv.org/abs/1706.03762" rel="external nofollow noopener" target="_blank">Attention is All You Need</a> is the seminal work that introduced the Transformer. The TensorFlow code related to the paper can be obtained from <a href="https://github.com/tensorflow/tensor2tensor" rel="external nofollow noopener" target="_blank">GitHub</a>, and of course many people have made <a href="https://github.com/huggingface/transformers" rel="external nofollow noopener" target="_blank">secondary developments</a> of it.</p> <p>In this article, I try to simplify the model a bit and introduce the core concepts one by one, hoping to make it easy for beginners to understand.</p> <h2 id="machine-translation">Machine Translation</h2> <p><img src="%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91.png" alt="Machine Translation"></p> <p>The Transformer was originally proposed mainly for translation tasks, so let’s start by understanding it from the principle of translation.</p> <p>First, we can observe that translation consists of two parts: <strong>encoder</strong> and <strong>decoder</strong>; here the <strong>encoder</strong> absorbs the sentence to be translated, such as <em>Machine Learning</em>, while the <strong>decoder</strong> outputs the corresponding <em>机器学习</em> (machine learning in Chinese).</p> <p>Specifically, the entire translation process is divided into the following steps:</p> <h3 id="sentence-processing">Sentence Processing</h3> <p>For a passage, both the meaning of words themselves and their relative positions in the sentence are equally important. So the translator first obtains the vector corresponding to each word’s own meaning and the vector corresponding to the word’s position in the sentence through <strong>token embeddings</strong>; and adds them together. This way each word can be represented by a vector that simultaneously encodes meaning and position. Correspondingly, a sentence can be expressed by a matrix.</p> <h3 id="processing-the-sentence-matrix">Processing the Sentence Matrix</h3> <p>Then, we pass the sentence vector matrix $X$ we just obtained into the <strong>encoder</strong>, which outputs an encoded sentence $C$ containing all the sentence’s information. $X$ and $C$ have exactly the same shape, both $n \times d$, where $n$ represents the number of words in the sentence, and $d$ represents the vector dimension of a word (the paper uses $d=512$).</p> <h3 id="translation">Translation</h3> <p>Now we pass the <strong>encoder</strong> output $C$ into the <strong>decoder</strong>, that is, we pass the information of the sentence to be translated. At the same time, we pass in a special symbol “$”, which represents the beginning of a sentence. Then the <strong>decoder</strong> will output the first Chinese character “<strong>机</strong>” based on $C$ and “$”.</p> <p>Then, “<strong>$+机</strong>” replaces the original $ position as input, and together with $C$ passes through the <strong>decoder</strong> to output “<strong>器</strong>”.</p> <p>This cycle repeats until another special symbol representing the end of a sentence, “#”, is output.</p> <p>Below, we specifically introduce how the Transformer implements this process.</p> <h3 id="transformer-overall-architecture">Transformer Overall Architecture</h3> <p><img src="transformer%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.png" alt="Transformer Architecture"></p> <p>As can be seen, the Transformer is similar in form to the translator we just discussed. Let’s now expand on what each part is doing.</p> <h2 id="transformer-input">Transformer Input</h2> <h3 id="input-embedding">Input Embedding</h3> <p>Inputs, that is, the text we input to be translated, after passing through the embedding vector, will be mapped to a high-dimensional space. That is, the “features” of words are extracted and placed in a matrix, which we might call the <strong>semantic matrix</strong>.</p> <h3 id="positional-encoding">Positional Encoding</h3> <p>Obtain the position information of each word in the sentence, also forming a matrix, which we might call the <strong>position matrix</strong>. Then add the semantic matrix and the position matrix to get the encoder’s input.</p> <p>There are many algorithms for the specific position matrix; here we introduce a relatively simple method:</p> \[PE_{(pos,2i)}=\sin(\frac{pos}{10000^{\frac{2i}{d}}}), \quad PE_{(pos,2i+1)}=\cos(\frac{pos}{10000^{\frac{2i}{d}}})\] <p>Here $PE$ represents the position information of words; $pos$ represents the word’s position in the sentence; $d$ represents the word’s dimension, that is, the number of measures needed for the word’s “feature”; $2i$ is the even dimension, and $2i+1$ is the odd dimension. Using this calculation method is simple enough and well satisfies several conditions:</p> <ul> <li>Ensures PE has the same size as words, that is, the semantic matrix and position matrix have the same size</li> <li>PE can adapt to situations where sentences in the validation set are longer than those in the training set</li> <li>Facilitates obtaining relative position information; for example, if two words are distance $k$ apart, knowing one allows quickly obtaining the other: $\sin(pos+k)=\sin(pos)\cos(k)+\cos(pos)\sin(k)$, $\cos(pos+k)=\cos(pos)\cos(k)-\sin(pos)\sin(k)$</li> </ul> <h3 id="entering-the-encoder">Entering the Encoder</h3> <p>Adding input embedding and positional embedding gives the matrix $X$ representing the sentence, which then enters the encoder.</p> <h2 id="self-attention">Self-Attention</h2> <p>Before entering the encoder, it is necessary to first introduce the self-attention mechanism, which is the essence of the Transformer. Let’s take another look at the overall architecture.</p> <p><img src="transformer%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.png" alt="Transformer Architecture"></p> <p>Please note those <strong>light orange</strong> blocks. The <strong>Self-Attention</strong> here is what we will focus on next, and this structure is the same in both the encoder and decoder. As for “Multi-Head Attention” and “Masked Multi-Head Attention,” they are essentially the same, just with some additional modifications.</p> <h3 id="self-attention-structure">Self-Attention Structure</h3> <p>First, let’s look at a simple example to understand what <strong>attention</strong> is. As shown in the figure below, attention is the degree of closeness between one word and another. Here <strong>the green “The”</strong> is the object we want to examine. We want to know how closely it is related to other words in the sentence, so we take the inner product of <strong>The</strong>’s representation vector $\vec x_{the}$ and the representation vectors of other words in the sentence $\vec x_{others}$. Then we use softmax for normalization to get the score of the relationship between <strong>The</strong> and other words.</p> <p>Then, we use this “scoring system” to score each word in the sentence and sum them up to get the <strong>attention</strong> that <strong>The</strong> occupies in the entire sentence.</p> <p>In fact, we can see that since every word in “The weather is nice today” needs the same operation, the entire process can be viewed as matrix multiplication:</p> \[Attention = \text{softmax}(X \cdot X^{T}) \cdot X\] <p>Here, the input and output matrix shapes are exactly the same; it’s just that the “semantic matrix” of the entire sentence adjusts the “representation vector” of each word in the sentence. Moreover, since it is multiplying itself by itself, this process is <strong>self</strong>-attention.</p> <p>At the same time, this process is also consistent with human language habits. The same word necessarily needs to be given different meanings depending on different sentences, such as “Apple phone” and “picking apples”.</p> <p><img src="%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%BE%8B%E5%AD%90.png" alt="Self-Attention Example"></p> <h3 id="self-attention-in-transformer">Self-Attention in Transformer</h3> <p>Then let’s see how the Transformer applies self-attention.</p> <p><img src="%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.png" alt="Self-Attention"></p> <p>To enhance the effect of self-attention, before formal calculation, matrices $W_Q$ (query matrix), $W_K$ (key matrix), and $W_V$ (value matrix) are first used to correct the input ($X$).</p> \[Q = X \cdot W_Q \\ K = X \cdot W_K \\ V = X \cdot W_V\] <p>This gives three different matrices: Q (query), K (key), and V (value). Compared to $X$, $Q, K, V$ have unchanged row numbers but changed column numbers; equivalently, the number of words remains unchanged but the number of features measuring each word has changed.</p> <p>Then, these three are passed into the mechanism shown in the figure above to calculate Self-Attention:</p> \[Z = Attention(Q,K,V) = \text{softmax}(\frac{Q \cdot K^{T}}{\sqrt{d_k}}) \cdot V\] <p>The following figure may better express the entire process.</p> <p><img src="self-attention.png" alt="Self-Attention"></p> <p>Here, to prevent the inner product from becoming too large, it is divided by $d_k$, which is the number of columns of $K$. Similarly, the entire process does not change the row number of $X$, only the column number. Here $Z$ is the output matrix of self-attention.</p> <h3 id="multi-head-attention">Multi-Head Attention</h3> <p>In the previous step, we obtained the output matrix $Z$ through Self-Attention, but this is not enough. One reason is that the sentence information obtained this way is insufficient, leading to insufficient accuracy. The essence of solving this problem is to extract more information from the sentence. A naive idea here is to “read it multiple times.” Multi-Head Attention is such an idea.</p> <p><img src="Multi-Head%20Attention.png" alt="Multi-Head Attention"></p> <p>From the figure above, we can see that Multi-Head Attention contains multiple Self-Attention layers. First, the input $X$ is passed to $h$ different Self-Attention modules, calculating $h$ output matrices $Z$. Here is the case when $h=8$, meaning 8 output matrices $Z$ will be obtained.</p> <p>Then the output $Z_i$ are concatenated together, and a linear transformation is applied to keep the matrix size unchanged before and after multi-head attention. Analogously, we can naturally think of this linear transformation as fusing information obtained from multiple readings.</p> <p>The following figure has a small problem: the $X$ and $D_X$ on the leftmost matrix are written in reverse; the small matrices in the middle are written correctly. However, this figure looks more intuitive, so it’s included here.</p> <p><img src="Multi-Head%20Attention-%E7%A4%BA%E6%84%8F.png" alt="MHA Illustration"></p> <h3 id="multi-layer-self-attention">Multi-Layer Self-Attention</h3> <p>This idea seems so natural. Just consider our MLP and you can clearly see the benefits of increasing network depth. So here we don’t want to discuss such mechanisms, but rather find this figure interesting. I didn’t understand it the first time, and I think it’s worth discussing.</p> <p><img src="Multi-Layer%20Self-Attention.png" alt="Multi-Layer Self-Attention"></p> <p>In the figure above, each large rectangle wraps a Self-Attention in Transformer. <strong>A hexagon represents the attention between one word and other words</strong>. Looking carefully, you can see that the red dots in each hexagon are different. After one Self-Attention in Transformer is implemented, some nonlinear function $f(\cdot)$ is used to pass the output to the next Self-Attention in Transformer, and this is repeated several times.</p> <h2 id="encoder">Encoder</h2> <p>After discussing Self-Attention, we can finally formally enter the Transformer.</p> <p><img src="transformer%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.png" alt="Transformer Architecture"></p> <p>The light orange part on the left side of the figure above is our encoder, or encoder block, because we need to use this structure repeatedly $N$ times.</p> <p>We have already discussed Multi-Head Attention in detail, so here we focus on Add &amp; Norm and Feed Forward.</p> <h3 id="add">Add</h3> <p>Add is the residual connection, expressed by the formula $X + \text{MultiHeadAttention}(X)$. Such operations were already seen in RNNs; the benefit is avoiding gradient vanishing in backpropagation.</p> <p>Here we can see the benefit of keeping $Z$ and $X$ the same shape.</p> <h3 id="norm">Norm</h3> <p>Normalization needs little explanation; it’s just Gaussian/normalization. $\text{LayerNorm}(X + \text{MultiHeadAttention}(X))$</p> <p>Layer Normalization converts the input of each layer of neurons to have the same mean and variance, which can accelerate convergence.</p> <h3 id="feed-forward">Feed Forward</h3> <p>The Feed Forward layer is relatively simple, a two-layer fully connected layer with ReLU as the activation function for the first layer and no activation function for the second layer: $\text{ReLU}(XW_1+b_1)W_2+b_2$</p> <h3 id="assembling-the-head">Assembling the Head</h3> <p>Multi-Head Attention, Feed Forward, and Add &amp; Norm can construct an Encoder block. The Encoder block receives the input matrix $X$ and outputs a matrix $C$. Multiple Encoder blocks are stacked to form the Encoder.</p> <p>The first Encoder block’s input is the word representation vector matrix of the sentence. Subsequent Encoder blocks’ inputs are the outputs of the previous Encoder block. The last Encoder block’s output matrix is the encoded information matrix $C$, which will be used in the Decoder later.</p> <h2 id="decoder">Decoder</h2> <p><img src="transformer%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84.png" alt="Transformer Architecture"></p> <p>The light orange part on the right side of the figure above is our decoder, or decoder block, because we also need to use this structure repeatedly $N$ times.</p> <p>Although there are two here, they are essentially the same, both being our Multi-Head Attention; it’s just that the input $X$ is different from before.</p> <p>In summary:</p> <ul> <li>The first Multi-Head Attention layer uses Masked</li> <li>The second Multi-Head Attention layer uses the Encoder’s encoded information matrix $C$ to calculate K, V matrices, while Q uses the previous Decoder block’s output or input $X$ to calculate</li> </ul> <p>Here, let’s think about why there is this arrangement of “the K, V matrices of the Multi-Head Attention layer use the Encoder’s encoded information matrix $C$ to calculate.”</p> <h3 id="masked-multi-head-attention">Masked Multi-Head Attention</h3> <p>Mask, occlusion — I feel this is very intuitive, but something I couldn’t think of myself. It’s the kind of thing that seems obvious after hearing someone else’s explanation, but you would absolutely never think of it yourself.</p> <p>It comes from a reality: when we do translation, we only know the preceding context of the translated content, not the following context. Imagine you are reading an English book; the English content is naturally complete, but the Chinese meaning appears one by one in sequence. So when calculating <strong>attention</strong>, we need to shield the connection between this word and words that come after it in the sentence. This part feels a bit convoluted.</p> <p>I wonder if you still remember the concept of <strong>attention</strong>. It’s actually the degree of closeness between one word and all other words in a sentence. The general measure is the size of the inner product of the word’s <strong>representation vector</strong>. Since every word in the sentence needs to obtain its own attention, the actual calculation is the dot product of the sentence’s <strong>semantic matrix</strong> with its own transpose.</p> <p>But as mentioned earlier, in the Transformer, for better performance, we use linear transformations to convert $X$ into $Q, K, V$, and we also said $Z = Attention(Q,K,V) = \text{softmax}(\frac{Q \cdot K^{T}}{\sqrt{d_k}}) \cdot V$. I wonder if you can see which part is the <strong>attention matrix</strong> (a term I just made up).</p> <p>It’s actually $Q \cdot K^{T}$. We just need to multiply it by a mask matrix, that is, $Q \cdot K^T \cdot \text{mask}$.</p> <p>So, what kind of mask matrix can satisfy such requirements? As shown below:</p> \[\begin{bmatrix} {1} &amp; {0} &amp; {\cdots} &amp; {0} \\ {1} &amp; {1} &amp; {\cdots} &amp; {0} \\ {\vdots} &amp; {\vdots} &amp; {\ddots} &amp; {\vdots} \\ {1} &amp; {1} &amp; {\cdots} &amp; {0} \end{bmatrix}\] <p>This way, our attention becomes: $Attention(Q,K,V) = \text{softmax}(\frac{Q \cdot K^{T} \cdot \text{Mask}}{\sqrt{d_k}}) \cdot V$</p> <p>We obtain a Mask Self-Attention output matrix. Similar to the Encoder, through Multi-Head Attention, multiple outputs are concatenated and then linearly transformed to get the first Multi-Head Attention output $Z$, which has the same dimensions as input $X$.</p> <p>In fact, when I was about to write Multi-Head Attention-2, I suddenly realized there might be some ambiguity here regarding the input of Masked Multi-Head Attention.</p> <p>What I want to say is that the input of Masked Multi-Head Attention has no explicit relationship with the encoder; subsequent decoder blocks will naturally have implicit connections! The $Q, K, V$ in the input of Masked Multi-Head Attention are obtained from a matrix $X$ transformation!</p> <h3 id="multi-head-attention-2">Multi-Head Attention-2</h3> <p>Well, Multi-Head Attention-2 is also easy to understand. The only thing worth noting is that the Self-Attention K, V matrices are not calculated using the previous Decoder block’s output, but using the Encoder’s encoded information matrix $C$.</p> <p>I wonder if you still remember the previous question.</p> <p>Here, it’s not hard to answer. Think about how our current $Q, K, V$ are obtained:</p> \[Q = X \cdot W_Q \\ K = C \cdot W_K \\ V = C \cdot W_V\] <p>Then think about what attention is: $Attention(Q,K,V) = \text{softmax}(\frac{Q \cdot K^{T}}{\sqrt{d_k}}) \cdot V$. We are essentially examining the relationship between the input $X$, such as a start symbol, and the content of the sentence to be translated; then adjusting the content of the sentence to be translated based on this relationship.</p> <p>The advantage of doing this is that in the Decoder, every output word can utilize information from all words in the Encoder.</p> <h2 id="softmax">Softmax</h2> <p>After finishing the Decoder, because it’s also a “Multi-Head,” a linear transformation is first applied to keep the size the same as at the beginning. Then softmax is used to complete scoring.</p> <p>After that, it’s no different from the subsequent steps of MLP: comparing with the decoder input $X$ to get loss and accuracy, choosing an appropriate optimizer to compute gradients, etc.</p> <h2 id="summary">Summary</h2> <ul> <li>The Transformer does not utilize word order information, so positional embeddings need to be added to the input.</li> <li>The Self-Attention structure is the focus of the Transformer, where the Q, K, V matrices are obtained through linear transformation of $X$.</li> <li>Multi-Head Attention contains multiple Self-Attention modules, aiming to capture more relationships between words.</li> </ul> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="noopener noreferrer">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="noopener noreferrer">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/github-connection-in-extreme-conditions/">GitHub Connection Under Extreme Conditions</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/creating-vm-instance-on-autodl/">Creating a VM Instance on AutoDL</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/introduction-to-deep-learning/">Introduction to Deep Learning</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/backpropagation/">Backpropagation</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/creating-vm-instance-on-gcp/">Creating a VM Instance on GCP</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/scgpt-model-performance/">scGPT: Model Performance and Downstream Tasks</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/llm-and-biosequence/">LLM and BioSequence: GenePT, scGPT, and Geneformer</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/introduction-to-diffusion-models/">Introduction to Diffusion Models</a> </li> </ul> <div id="giscus_thread" style="max-width: 930px; margin: 0 auto;"> <br> <blockquote class="block-danger"> <h5>giscus comments misconfigured</h5> <p>Please follow instructions at <a href="http://giscus.app" rel="external nofollow noopener" target="_blank">http://giscus.app</a> and update your giscus configuration.</p> <p>Missing required keys: <code>repo_id, category_id</code>.</p> </blockquote> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jieke (Jack) Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Jieke (Jack) Wu&#39;s publications — papers on generative models, training-free methods, and AI for science.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Jieke (Jack) Wu&#39;s academic CV — education, research experience, publications, awards, and skills.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-github-connection-under-extreme-conditions",
+        
+          title: "GitHub Connection Under Extreme Conditions",
+        
+        description: "A guide for multiple researchers sharing a single server account to use Git and GitHub independently.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/github-connection-in-extreme-conditions/";
+          
+        },
+      },{id: "post-creating-a-vm-instance-on-autodl",
+        
+          title: "Creating a VM Instance on AutoDL",
+        
+        description: "A step-by-step guide to creating and connecting to a virtual machine instance on AutoDL for deep learning.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/creating-vm-instance-on-autodl/";
+          
+        },
+      },{id: "post-introduction-to-deep-learning",
+        
+          title: "Introduction to Deep Learning",
+        
+        description: "An intuitive introduction to neural networks, using curve fitting as a motivating example to explain forward propagation.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/introduction-to-deep-learning/";
+          
+        },
+      },{id: "post-backpropagation",
+        
+          title: "Backpropagation",
+        
+        description: "A tutorial on backpropagation covering entropy, cross-entropy loss, and gradient-based optimization.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/backpropagation/";
+          
+        },
+      },{id: "post-creating-a-vm-instance-on-gcp",
+        
+          title: "Creating a VM Instance on GCP",
+        
+        description: "A practical guide to creating GPU-enabled virtual machine instances on Google Cloud Platform.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/creating-vm-instance-on-gcp/";
+          
+        },
+      },{id: "post-scgpt-model-performance-and-downstream-tasks",
+        
+          title: "scGPT: Model Performance and Downstream Tasks",
+        
+        description: "A comprehensive summary of the scGPT foundation model and its evaluation across cell type annotation, perturbation prediction, multi-batch integration, and gene regulatory network inference.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/scgpt-model-performance/";
+          
+        },
+      },{id: "post-llm-and-biosequence-genept-scgpt-and-geneformer",
+        
+          title: "LLM and BioSequence: GenePT, scGPT, and Geneformer",
+        
+        description: "A survey of how large language models are applied to biological sequences, covering GenePT, scGPT, and Geneformer with their downstream tasks and evaluation metrics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/llm-and-biosequence/";
+          
+        },
+      },{id: "post-introduction-to-diffusion-models",
+        
+          title: "Introduction to Diffusion Models",
+        
+        description: "A brief overview of diffusion models for generative modeling. (Original content was lost during migration.)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/introduction-to-diffusion-models/";
+          
+        },
+      },{id: "post-genept-leveraging-llms-for-gene-and-cell-embeddings",
+        
+          title: "GenePT: Leveraging LLMs for Gene and Cell Embeddings",
+        
+        description: "A summary of the GenePT model, its downstream tasks, evaluation metrics, and comparison with single-cell foundation models.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/genept-leveraging-llms-for-gene-embeddings/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-transformer-learning-notes",
+        
+          title: "Transformer Learning Notes",
+        
+        description: "A beginner-friendly walkthrough of the Transformer architecture, covering self-attention, multi-head attention, encoder-decoder structure, and positional encoding.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/transformer-learning-notes/";
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6A%69%65%6B%65.%77%75@%6B%61%75%73%74.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=nCqN-psAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/a-green-hand-jack", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/JackLiuitxl", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
